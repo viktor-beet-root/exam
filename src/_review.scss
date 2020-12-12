@@ -1,0 +1,47 @@
+.review{
+    @include bgCover('../images/11-min.jpg');
+    padding-bottom: 200px;
+}
+
+.review__item {
+    padding: 120px 0 94px;
+    font-family: $secondary-fonts;
+    font-size: 36px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.review__block {
+    display: flex;
+    background-color: #333333;
+}
+
+.review__textblock {
+    margin: 0 auto;
+    max-width: 551px;
+}
+
+.review__icon {
+    padding-bottom: 8px;
+}
+
+.review__i{
+    padding: 50px 0 33px;
+    color: #fefefe;
+    font-family: "Josefin Sans";
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 26px;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.review__text {
+    color: #e8e8e8;
+    font-family: "Josefin Sans";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    text-align: left;
+    padding-bottom: 48px;
+}

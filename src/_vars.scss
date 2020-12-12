@@ -1,0 +1,26 @@
+//Polygraphy
+
+$default-fonts-name: "Josefin Sans";
+$follbak: Arial, Helvetica, sans-serif;
+$default-fonts: $default-fonts-name, $follbak;
+$default-font-size: 16px;
+
+
+$secondary-fonts-name: "Aleo";
+$secondary-fonts: $secondary-fonts-name, $follbak;
+//Color
+$white:white;
+$darkGray:#999999;
+$royalBlue: #5474fd;
+$ultramarineBlue:#496bfe;
+$darkCharcoal:#333333;
+
+$textColor:$white;
+$seachInput:$white;
+$seachInputText:$darkGray;
+$seachBorder:$white;
+$seachButtonBg:$royalBlue;
+$btnBg:$royalBlue;
+$btnText:$white;
+$btnBefore:$ultramarineBlue;
+$bookBgCl:$darkCharcoal;

@@ -1,0 +1,99 @@
+.seach {
+    @include bgCover('../images/1-min.jpg');
+}
+
+.seach__item {
+    padding-top: 280px;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 26px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 4.8px;
+}
+
+.seach__text {
+    padding-top: 15px;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 26px;
+    text-align: center;
+    letter-spacing: 6.82px;
+    padding-bottom: 50px;
+}
+
+.seach__form {
+    text-align: center;
+}
+
+.seach__inputblock {
+    margin: 0 auto;
+    width: 650px;
+    background-color:$seachInput;
+}
+
+.seach__input {
+    text-align: left;
+    border: none;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 2.8px;
+    width: 490px;
+}
+
+.seach__input::placeholder{
+    text-align: center;
+}
+
+.seach__button {
+    width: 150px;
+    height: 60px;
+    border: 2px solid $seachBorder;
+    background-color: $seachButtonBg;
+}
+
+.seach__button span {
+    font-family: $secondary-fonts;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 26px;
+    text-align: center;
+    text-transform: uppercase;
+    padding-right: 15px;
+}
+
+.seach__icon {
+    color: #ffffff;
+    text-align: right;
+    vertical-align: auto;
+}
+
+.down {
+    height: 50px;
+    width: 110px;
+    padding-top: 120px;
+    margin: 0 auto;
+    position: relative;
+    cursor: pointer;
+}
+
+.down__link{
+    color:$textColor;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 26px;
+    text-align: center;
+    letter-spacing: 2.8px;
+    text-decoration: none;
+}
+
+.down__img{
+    margin: 0 auto;
+    display: block;
+    padding-bottom: 135px;
+}
+
+.down::after {
+
+}

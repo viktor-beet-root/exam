@@ -1,0 +1,30 @@
+.book {
+    background-color: $bookBgCl;
+}
+
+.book__block {
+    margin: 0 auto;
+    max-width: 975px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.book__cont {
+    margin: 0 auto;
+    display: block;
+    padding-top: 80px;
+}
+
+.book__img {
+    display: block;
+    margin: 0 auto;
+}
+
+.book__item {
+    padding: 15px 0 119px;
+    color: #e8e8e8;
+    font-family: Aleo;
+    font-size: 36px;
+    font-weight: 400;
+    text-align: center;
+}

@@ -1,0 +1,38 @@
+.footer {
+background-color: #232323;
+}
+
+.footer__logo {
+    display: block;
+    margin: 0 auto;
+    width: 163px;
+    height: 20px;
+    padding-top: 120px;
+}
+
+.footer__item {
+    color: #ffffff;
+    font-family: "Josefin Sans";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    text-align: center;
+    letter-spacing: 1.6px;
+    padding: 15px 0 15px;
+}
+
+.footer__icons{
+    text-align: center;
+    padding-bottom: 52px;
+}
+
+.icon {
+    padding-right: 24px;
+    fill: white;
+    height: 15px;
+    width: 15px;
+}
+
+.icon:last-child{
+    padding-right: 0px;
+}
