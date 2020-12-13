@@ -1,8 +1,8 @@
 .menu {
-    background-color: #5474fd;
+    background-color: $menuBg;
 }
 
-.menu_nav {
+.menu__nav {
     display: flex;
     justify-content: space-between;
 }
@@ -11,20 +11,80 @@
     padding: 28px 0 32px;
 }
 
-.menu__items {
+.menu__list{
     display: flex;
     padding: 28px;
+    @media (max-width:850px){
+            display: none;
+        }
 }
 
-.menu__links {
-    color: #ffffff;
+.menu__item{
+    padding: 0 21px;
+}
+
+.menu__links{
+    color:$textColor;
     font-family: $secondary-fonts;
     font-size: 14px;
     font-weight: 400;
     line-height: 26px;
     text-transform: uppercase;
     text-decoration: none;
-    padding: 0 21px;
+    padding-top:2px;
 }
 
+.menu__links:hover{
+    border-top:1px solid $white;
+}
 
+.menu__btn {
+    margin-top: 28px;
+    width: 30px;
+    height: 30px;
+    display: none;
+    position: relative;
+    @media (max-width:850px) {
+        display: block;
+    }
+    cursor: pointer;
+}
+
+.menu__input:checked {
+    &~.menu__list{
+        display: block;
+    }
+}
+
+@media (max-width:850px){
+    .menu__burger,
+    .menu__btn::before, 
+    .menu__btn::after {
+        content: '';
+        background-color:white;
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        left: 0;
+    }
+    .menu__btn::before{
+        top: 0;
+    }
+    .menu__btn::after{
+        bottom: 0;
+    }
+    .menu__burger{
+        top: 13px;
+    }
+    .menu__input:checked {
+        &~.menu__burger{
+            background-color:transparent;
+        }
+        &~.menu__btn::before{
+            transform: skewX(-45deg);
+        }
+        &~.menu__btn::after{
+            transform: skewX(45deg);
+        }
+    }
+}

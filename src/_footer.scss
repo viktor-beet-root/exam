@@ -11,8 +11,7 @@ background-color: #232323;
 }
 
 .footer__item {
-    color: #ffffff;
-    font-family: "Josefin Sans";
+    color: $footerItem;
     font-size: 16px;
     font-weight: 400;
     line-height: 26px;
@@ -27,12 +26,19 @@ background-color: #232323;
 }
 
 .icon {
-    padding-right: 24px;
-    fill: white;
     height: 15px;
     width: 15px;
 }
 
-.icon:last-child{
+.footer__link{
+    text-decoration: none;
+    padding-right: 24px;
+}
+
+.footer__link:last-child{
     padding-right: 0px;
+}
+
+.icon:hover svg{
+    fill:$iconFill;
 }

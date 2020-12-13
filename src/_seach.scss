@@ -1,5 +1,6 @@
 .seach {
     @include bgCover('../images/1-min.jpg');
+    min-height: 740px;
 }
 
 .seach__item {
@@ -29,7 +30,7 @@
 .seach__inputblock {
     margin: 0 auto;
     width: 650px;
-    background-color:$seachInput;
+    background-color: $seachInput;
 }
 
 .seach__input {
@@ -39,10 +40,18 @@
     font-weight: 400;
     line-height: 26px;
     letter-spacing: 2.8px;
-    width: 490px;
+    width: 430px;
+    padding-left: 62px;
+    cursor: pointer;
 }
 
-.seach__input::placeholder{
+.seach__input:focus {
+    outline: $seachInput;
+    color: $ultramarineBlue;
+    font-size: 18px;
+}
+
+.seach__input::placeholder {
     text-align: center;
 }
 
@@ -51,35 +60,59 @@
     height: 60px;
     border: 2px solid $seachBorder;
     background-color: $seachButtonBg;
+    cursor: pointer;
+    position: relative;
+}
+
+.seach__button::before {
+    content: "";
+    width: 1px;
+    height: 56px;
+    background-color: $ultramarineBlue;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: .3s ease-in-out;
+    z-index: -1;
+}
+
+.seach__button:hover::before {
+    width: 100%;
+    z-index: 3;
 }
 
 .seach__button span {
+    position: relative;
+    color: $textColor;
     font-family: $secondary-fonts;
+    letter-spacing: 1.4px;
     font-size: 14px;
     font-weight: 400;
     line-height: 26px;
     text-align: center;
     text-transform: uppercase;
-    padding-right: 15px;
+    padding-right: 13px;
+    z-index: 5;
 }
 
 .seach__icon {
-    color: #ffffff;
+    position: relative;
+    color: $textColor;
     text-align: right;
-    vertical-align: auto;
+    vertical-align: middle;
+    z-index: 5;
 }
 
 .down {
     height: 50px;
     width: 110px;
-    padding-top: 120px;
-    margin: 0 auto;
+    margin: 120px auto 0;
     position: relative;
     cursor: pointer;
 }
 
-.down__link{
-    color:$textColor;
+.down__link {
+    color: $textColor;
     font-size: 14px;
     font-weight: 400;
     line-height: 26px;
@@ -88,12 +121,68 @@
     text-decoration: none;
 }
 
-.down__img{
-    margin: 0 auto;
-    display: block;
-    padding-bottom: 135px;
+.down__link::before {
+    position: absolute;
+    content: '';
+    height: 10px;
+    border: 1px solid $seachBorder;
+    transform: skewX(-45deg);
+    top: 30px;
+    left: 55px;
 }
 
-.down::after {
+.down__link::after {
+    position: absolute;
+    content: '';
+    height: 10px;
+    border: 1px solid $seachBorder;
+    transform: skewX(45deg);
+    top: 30px;
+    left: 44px;
+}
 
+.down__link:hover {
+    color: $ultramarineBlue;
+    border: 1px solid $ultramarineBlue;
+}
+
+@media (max-width:767px) and (min-width:576px) {
+    .seach {
+        min-height: 500px;
+    }
+
+    .seach__item {
+        padding-top: 200px;
+        font-size: 40px;
+    }
+
+    .seach__inputblock {
+        width: 550px;
+    }
+
+    .seach__input {
+        padding-left: 30px;
+        width: 360px;
+    }
+}
+
+@media (max-width:575px) {
+    .seach {
+        min-height: 400px;
+    }
+
+    .seach__item {
+        padding-top: 150px;
+        font-size: 35px;
+    }
+
+    .seach__input {
+        width: 150px;
+        padding-left: 0;
+        font-size: 12px;
+    }
+
+    .seach__inputblock {
+        width: 310px;
+    }
 }

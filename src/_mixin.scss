@@ -9,7 +9,6 @@
 @mixin bgCover($img) {
     background-image: url($img);
     background-repeat: none;
-    background-position: center;
     background-size: cover;
 }
 

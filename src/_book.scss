@@ -1,10 +1,11 @@
 .book {
     background-color: $bookBgCl;
+    position: relative;
 }
 
 .book__block {
     margin: 0 auto;
-    max-width: 975px;
+    max-width: 1000px;
     display: flex;
     justify-content: space-between;
 }
@@ -16,15 +17,46 @@
 }
 
 .book__img {
+    position: relative;
     display: block;
     margin: 0 auto;
+    z-index: 10;
+}
+
+.book__shape{
+    display: block;
+    position: absolute;
+    z-index: 5;
+    top: 20px;
+    left: 266px;
 }
 
 .book__item {
     padding: 15px 0 119px;
-    color: #e8e8e8;
-    font-family: Aleo;
+    color:$bookItem;
+    font-family: $secondary-fonts;
     font-size: 36px;
     font-weight: 400;
     text-align: center;
+}
+
+@media (max-width:849px) and (min-width:768px){
+    .book__item {
+        font-size: 30px;
+        padding: 15px 0 100px;
+    }
+}
+
+@media (max-width:767px) and (min-width:576px){
+    .book__item {
+        font-size: 25px;
+        padding: 15px 0 75px;
+    }
+}
+
+@media (max-width:575px){
+    .book__item {
+        font-size: 20px;
+        padding: 15px 0 50px;
+    }
 }
