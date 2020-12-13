@@ -1,0 +1,58 @@
+.start-section {
+    height: 750px;
+    @include bgCover ('../img/head_bg.jpg');
+    position: relative;
+
+    @media (max-width: $SM ) {
+        height: 600px;
+         }
+
+    &__block {
+        max-width: 100%;
+        @include positionCenter;
+        margin: 0 auto;
+    }
+
+    &__heading {
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 48px;
+
+        @media (max-width: $SM ) {
+           font-size: 36px;
+            }
+    }
+
+    &__text {
+        text-align: center;
+        font-size: 22px;
+        letter-spacing: 4.5px;
+        margin-bottom: 50px;
+    }
+
+    &__scroll-box {
+        position: absolute;
+        bottom: 150px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    &__scroll {
+        font-size: 14px;
+        letter-spacing: 3px;
+        position: relative;
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 20px;
+            left: 50%;
+            width: 10px;
+            height: 10px;
+            border-bottom: 1px solid $color-white;
+            border-left: 1px solid $color-white;
+            transform: rotate(-45deg) translateX(-50%);
+        }
+    }
+}

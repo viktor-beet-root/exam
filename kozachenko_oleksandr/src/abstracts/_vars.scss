@@ -1,0 +1,32 @@
+$default-fonts-name:"Josefin Sans";
+$secondary-fonts-name: "Aleo";
+$follbak: Arial, Helvetica, sans-serif;
+$default-fonts: $default-fonts-name, $follbak;
+$secondary-fonts: $secondary-fonts-name, $follbak;
+$default-font-size: 16px;
+$default-line-height: 1.625;
+
+$small-font-size: 12px;
+
+$color-white: #fff;
+$color-black: #000;
+$color-primary-dark: #5474fd;
+$color-primary-light:#496bfe;
+$color-bg: #232323;
+
+//точка переключения размера XL
+$XL: 1200px;
+//ширина контейнера размера XL
+$XL_width:960px;
+//точка переключения размера LG
+$LG: 992px;
+//ширина контейнера размера LG
+$LG_width:720px;
+//точка переключения размера MD
+$MD: 768px;
+//ширина контейнера размера MD
+$MD_width:540px;
+//точка переключения размера SM
+$SM: 576px;
+//ширина контейнера размера SM
+$SM_width: 100%;

@@ -1,0 +1,32 @@
+.footer {
+    background-color: $color-bg;
+    padding-top: 120px;
+    height: 265px;
+
+    @media (max-width: $LG ) {
+        height: 200px;
+        padding-top: 60px;
+        }
+}
+
+.social {
+    margin-top: 25px;
+
+    &__link {
+        display: inline-block;
+
+        &:not(:last-child) {
+            margin-right: 22px;
+        }
+    }
+    
+    &__icon {
+        height: 16px;
+        cursor: pointer;
+        fill: $color-white;
+
+        &:hover {
+            fill: $color-primary-dark;
+        }
+    }
+}

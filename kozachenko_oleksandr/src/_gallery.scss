@@ -1,0 +1,28 @@
+.gallery {
+    height: 750px;
+    padding-top: 230px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    @media (max-width: $LG ) {
+        padding-top: 150px;
+        }
+
+    &--1 {
+        background-image: url(../img/gallery_1.jpg);
+    }
+
+    &--2 {
+        background-image: url(../img/gallery_2.jpg);
+    }
+
+    &__box {
+        background-color: rgba($color_bg, .8);
+        padding: 45px 30px;
+
+        &_country {
+            font-size: 20px;
+        }
+    }
+}
