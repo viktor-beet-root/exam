@@ -1,0 +1,71 @@
+.whatOur{
+    @include bgCover('../images/whatOur_bg.jpg');
+    color: $white;
+    padding-top: 100px;
+    padding-bottom: 185px;
+
+    &__head{
+        font-family: $secondaryFont;
+        font-size: 36px;
+        font-weight: 400;
+        text-align: center;
+        padding-bottom: 78px;
+        letter-spacing: .6px;
+    }
+
+    &__info{
+
+        display: flex;
+        padding-top: 13px;
+        @media (max-width: 992px){
+            flex-direction: column;
+            width: min-content;
+            margin: 0 auto;
+        }
+
+        &_feedback{
+            background-color: $MineShaft;
+            padding: 52px 50px 0 60px;
+            @media (max-width: 1200px){
+                padding-top: 20px;
+            }
+        }
+
+        &_name{
+            font-size: 20px;
+            text-transform: uppercase;
+            letter-spacing: -1px;
+        }
+
+        &_quote{
+            font-size: 16px;
+            line-height: 1.625;
+            margin-top: 40px;
+            letter-spacing: -1px;
+
+            &::before{font-family: Arial, Helvetica, sans-serif;
+                color: $DodgerBlue;
+                content: open-quote;
+                float: left;
+                font-size: 70px;
+                line-height: .4;
+                margin: -5px 5px 0 0;
+            }
+        }
+    }
+}
+
+@media (max-width: 576px){
+    .whatOur__info{
+        width: auto;
+    }
+
+    .whatOur__info img{
+        width: 100%;
+        height: auto;
+    }
+
+    .whatOur__info_feedback{
+        padding: 5px;
+    }
+}

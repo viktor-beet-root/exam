@@ -1,0 +1,10 @@
+.country-2{
+    @include  bgCover('../images/spain-2_bg.jpg'); 
+    background-position: top;
+    padding-top: 200px;
+    padding-bottom: 72px;
+}
+
+.country-2__row{
+    justify-content: flex-end;
+}

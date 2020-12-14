@@ -1,0 +1,295 @@
+.header{
+        color: $white;
+
+    &__top{
+        padding: 250px 0 123px;
+        @include bgCover('../images/header_bg.jpg');
+        background-position: top;
+    }
+
+    &__head{
+        text-align: center;
+        font-size: 48px;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        padding-bottom: 5px;
+        @media (max-width: 576px){
+            font-size: 30px;
+        }
+    }
+
+    &__text{
+        font-size: 22px;
+        text-align: center;
+        letter-spacing: 5.5px;
+        margin-bottom: 50px;
+    }
+
+    &__search{
+        padding-bottom: 120px;
+    }
+
+    &__search_form{
+        display: flex;
+        margin: 0 auto;
+        justify-content: center;
+        @media (max-width: 576px){
+            flex-direction: column;
+            flex-shrink: 1;
+        }
+    }
+
+    &__search_input{
+        height: 60px;
+        width: 500px;
+        text-align: center;
+        border: 1px solid $white;
+        @media (max-width: 576px){
+            width: 100%;
+        }
+
+        &::placeholder{
+            color: $DustyGray;
+            font-size: 14px;
+            letter-spacing: 2px;
+        }
+    }
+
+    &__search_btn{
+        background-color: $DodgerBlue;
+        box-sizing: border-box;
+        width: 150px;
+        height: 60px;
+        border: 2px solid $white;
+        font-family: $secondaryFont;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        color: $white;
+        font-size: 14px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        cursor: pointer;
+        @media (max-width: 576px){
+            margin-top: 10px;
+        }
+        
+        & span{
+            padding-left: 35px;
+            @media (max-width:768px) {
+                padding-left: 15px;
+                padding-right: 15px;
+            }
+        }
+
+        & img{
+            padding-right: 15px;
+        }
+
+        &:hover,
+        &:focus{
+            background-color: $DodgerBlue_2;
+        }
+    }
+
+    &__scroll{
+        margin: 0 auto;
+        display: inline-flex;
+        color: $white;
+        font-size: 14px;
+        letter-spacing: 2px;
+        flex-direction: column;
+        align-items: center;
+        text-decoration: none;
+
+        &_text{
+            padding-bottom: 5px;
+        }
+
+        &_arrow{
+        width: 10px;
+        height: 10px;
+        transform: rotate(45deg);
+        border-right: 1px solid $white;
+        border-bottom: 1px solid $white;
+        transition: all .1s ease-in;
+        }
+
+        &:hover .header__scroll_arrow,
+        &:focus .header__scroll_arrow{
+            transform: rotate(45deg) translate(20px, 20px);
+            transition: all .1s ease-in;
+        }
+    }
+}
+
+.header__menu{
+    padding-top: 12px;
+    display: block;
+    background-color: $DodgerBlue;
+    padding-bottom: 15px;
+
+    &_row{
+        height: 100%;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.menu__name{
+    padding-left: 13px;
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.menu__items{
+    margin-right: 15px;
+    width: 525px;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    font-family: $secondaryFont;
+    font-size: 14px;
+
+    &_link{
+        height: 30px;
+        padding: 5px 0;
+        text-decoration: none;
+        color: $white;
+
+        &:hover,
+        &:focus{
+            border-bottom: 2px solid $white;
+            transition: all .1s ease-in;
+        }
+    }
+}
+
+@media (max-width: 992px){
+    .header__menu_row{
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    .menu__name{
+        align-self: flex-start;
+        padding-bottom: 30px;
+    }
+}
+
+@media (max-width: 768px){
+    .menu__name{
+        align-self: center;
+    }
+}
+
+@media (max-width: 576px){
+    .menu__name{
+        align-self: flex-start;
+        padding-bottom: 0;
+    }
+
+    .header__menu_row{
+        position: relative;
+    }    
+
+    .menu__hidden_btn{
+        cursor: pointer;
+        display: block;
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        right: 20px;
+        top: 0;
+    }
+
+    .menu__hidden_btn-line{
+        position: relative;
+        height: 2px;
+        width: 100%;
+        background-color: $white;
+
+        &::after,
+        &::before{
+            content: '';
+            position: absolute;
+            height: 2px;
+            width: 100%;
+            background-color: $white;
+        }
+
+        &::after{
+            bottom: -7px;
+        }
+
+        &::before{
+            bottom: -14px;
+        }
+    }
+
+    .menu__hidden:checked ~.menu__hidden_btn .menu__hidden_btn-line{
+        transform:translateY(7px) rotate(45deg) ;
+    }
+    
+    .menu__hidden:checked ~.menu__hidden_btn .menu__hidden_btn-line::after{
+        transform: translateY(-7px) rotate(-90deg);
+    }
+    
+    .menu__hidden:checked ~.menu__hidden_btn .menu__hidden_btn-line::before{
+        width: 0;
+    }
+
+    .menu__items{
+        width: 100%;
+        margin-top: 45px;
+        flex-direction: column;
+        visibility: hidden;
+        pointer-events: none;
+        position: absolute;
+        left: 0;
+        right: 0;
+        background-color: $MineShaft_2;
+        text-align: center;
+        opacity: 1;
+    }
+
+    .menu__hidden:checked ~.menu__items{
+        display: block;
+        visibility: visible;
+        pointer-events: all;
+        transition: .5s ease-in-out;
+        opacity: 1;
+        
+    }
+
+    .menu__items_item{
+        border-bottom: 1px solid $DodgerBlue;
+        margin: 0;
+        padding: 0;
+        cursor: pointer;
+    }
+
+    .menu__items_link{
+        display: block;
+        width: 100%;
+        height: 100%;
+        padding: 10px;
+    }
+
+    .menu__items_item:hover,
+    .menu__items_item:focus{
+        background-color: $DodgerBlue;
+        border-top:2px solid transparent;
+        
+        & .menu__items_link{
+            border-bottom: 0;
+        }
+    }
+
+    .menu__items_item:first-child:hover,
+    .menu__items_item:first-child:focus{
+        border-top:2px solid $MineShaft_2;
+    }
+}
