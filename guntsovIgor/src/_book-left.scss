@@ -1,0 +1,50 @@
+.main__book_left-bg {
+    background: url('../img/shato.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 230px 0 100px;
+    
+}
+
+.book {
+    padding: 45px 30px;
+    background-color: rgba(35, 35, 35, 0.9);
+    max-width: 540px;
+
+    &__country {
+        font-size: 20px;
+        color: $blockTextColor;
+        letter-spacing: 1.5px;
+        margin-bottom: 23px;
+    }
+
+    &__title {
+        font-size: 20px;
+        color: $textColor;
+        text-transform: uppercase;
+        margin-bottom: 25px;
+    }
+
+    &__text {
+        color: $blockTextColor;
+        margin-bottom: 45px;
+    }
+
+    &__link {
+        text-align: center;
+        display: inline-block;
+        text-decoration: none;
+        color: $blockTextColor;
+        font-family: $secondaryMainFont;
+        min-width: 225px;
+        padding: 17px 0;
+        background-color: $navColor;
+        transition: 0.5s ease-in-out;
+
+        &:hover {
+            background-color: white;
+            color:$navColor;
+            border-radius: 5px;
+        }
+    }
+}

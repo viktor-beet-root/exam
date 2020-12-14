@@ -1,0 +1,23 @@
+@mixin fontFace($fontFamily, $fontStyle, $fontWeight, $fontPath) {
+
+    @font-face {
+        font-family: $fontFamily;
+        font-style: $fontStyle;
+        font-weight: $fontWeight;
+        src:url('#{$fontPath}.woff2') format('woff2'),
+        url('#{$fontPath}.woff') format('woff');
+    }
+}
+
+@mixin positionCenter {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom:0;
+}
+
+@mixin containerCenter {
+    max-width: 1140px;
+    margin: 0 auto;
+}

@@ -1,0 +1,28 @@
+$defaultFont: 'Josefin Sans';
+$secondaryFont: 'Aleo';
+
+$fallbackFont: Arial, Helvetica, sans-serif;
+
+$mainFont: $defaultFont, $fallbackFont;
+$secondaryMainFont: $secondaryFont, $fallbackFont;
+
+$defaultFontSize: 16px;
+$defaultLineHeight: 1.625;
+$deafultFontWeight: 300;
+
+$blue: #5474fd;
+$white: white;
+$lightWhite: #e8e8e8;
+$brown: #333333;
+$darkBrown: #232323;
+$red: red;
+$darkWhite: #f2f3f4;
+
+
+$navColor: $blue;
+$textColor: $white;
+$blockTextColor: $lightWhite;
+$commentsBgColor: $brown;
+$footerBgColor: $darkBrown;
+$footerIconColor: $red;
+$searchBgColor: $darkWhite;
