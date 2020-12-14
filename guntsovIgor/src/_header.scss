@@ -50,22 +50,17 @@
 
         &__button {
             min-width: 150px;
-            height:60px;
+            height:61px;
             background-color: $navColor;
             margin-left: -10px;
             border: 2px solid $textColor;
             color:$textColor;
-            position: relative;
 
-            &::after {
-                content: '';
-                position: absolute;
-                width:20px;
-                height:20px;
-                right:10px;
-                top:50%;
-                transform:translateY(-50%);
-                background: url('../img/search.png') no-repeat;
+            &:hover {
+                background-color: $searchBgColor;
+                color: $navColor;
+                cursor: pointer;
+                border:1px solid $navColor;
             }
 
             @media screen and (max-width: 710px) {
@@ -226,4 +221,11 @@
     text-decoration: none;
     color:$textColor;
     }
+}
+
+.search_logo {
+    width:15px;
+    height:15px;
+    margin-left:10px;
+
 }
