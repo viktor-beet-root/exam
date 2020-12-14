@@ -1,0 +1,59 @@
+//Типография
+
+$firstFontName: 'Josefin Sans';
+$secondFontName: 'Aleo';
+$follbak: Arial, Helvetica, sans-serif;
+
+$firstFont: $firstFontName, $follbak;
+$secondFont: $secondFontName, $follbak;
+
+$defaultFont: $firstFont;
+//Цвета
+
+$white: #ffffff;
+$Dodger_Blue: #5474fd;
+$Blue:  #496bfe;
+$MineShaft: #333333;
+$seconMineShaft: #232323;
+$Mercury: #e8e8e8;
+
+//page
+
+$defaultColorText: $white;
+$colorBorderPage: $white;
+
+//header
+
+$header__search-input-bg: $white;
+
+//menu
+
+$menu__bg_color: $Dodger_Blue;
+$menu__element-color: $white;
+
+
+//button
+
+$button__default_color: $Dodger_Blue;
+$button__content_color : $white;
+$button__slider_color: $Blue;
+
+//how-it-work
+
+$how-it-wo__color_bg: $MineShaft;
+$how-it-wo__line-color: $white;
+
+//blog
+
+$blog__article-bg-color: $seconMineShaft;
+$blog__text-color: $Mercury;
+
+// testimonial
+
+$testimonial__blockquote-bg: $MineShaft;
+
+//footer
+
+$footer__color-bg: $seconMineShaft;
+$footer__color-hover: $Dodger_Blue ;
+$footer_color-icon: $Mercury;

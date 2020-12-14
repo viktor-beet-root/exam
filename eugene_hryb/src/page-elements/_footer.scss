@@ -1,0 +1,44 @@
+.footer{
+    padding-top: 103px;
+
+    @media (max-width: $MD) {
+        padding-top: 50px
+    }
+
+    &__bg{
+        background-color: $footer__color-bg ;
+    }
+
+    &__title, &__title-description{
+        display: block;
+        text-align: center;
+    }
+
+    &__title{
+        font-size: 24px;
+        text-transform: uppercase;
+    }
+
+    &__social-list{
+        display: flex;
+        justify-content: center;
+        padding: 20px 0;
+    }
+
+    &__social-link{
+        text-decoration: none;
+        color: $footer_color-icon;
+        padding: 0 (25px / 2) ;
+        transition: color .5s ease-in-out ;
+
+        & > svg{
+            height: 17px;
+            width: auto;
+            fill: $footer_color-icon ;
+        }
+
+        &:hover{
+            color: $footer__color-hover;
+        }
+    }
+}

@@ -1,0 +1,58 @@
+.choose-su{
+    min-height: 685px;
+    @include center-horizont;
+
+    &__bg{
+        @include bgCover('../img/choose-su.jpg');
+    }
+
+    &__article-wrap{
+        @include center-horizont;
+    }
+
+    &__title{
+        font-family: $secondFont;
+        font-size: 36px;
+        margin-bottom: 60px;
+    }
+
+    &__text{
+        margin-bottom: 40px;
+        opacity: .7;
+    }
+
+    &__img-wrap{
+        @include center-horizont;
+        align-items: flex-start;
+        padding-left: 80px;
+
+        @media (max-width: $LG){
+            padding-left: 15px;
+            align-items: flex-end;
+        }
+
+        @media (max-width: $MD){
+            align-items: flex-start;
+        }
+
+        @media (max-width: $SM){
+            align-items: center;
+        }
+    }
+
+    &__img{
+        display: block;
+
+        @media (max-width: $SM) {
+            max-width: 100%;
+        }
+
+        &:last-child{
+            align-self: flex-end;
+
+            @media (max-width: $SM) {
+                align-self:center;
+            }
+        }
+    }
+}

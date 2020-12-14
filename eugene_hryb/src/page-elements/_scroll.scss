@@ -1,0 +1,21 @@
+.scroll{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 74.634146%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-decoration: none;
+    color: inherit;
+
+    &_text{
+        font-size: 14px;
+        text-align: center;
+        letter-spacing: 2.8px;
+        padding-bottom: 6px;
+    }
+
+    &_img{
+        display: block;
+    }
+}
