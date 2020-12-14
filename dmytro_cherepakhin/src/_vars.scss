@@ -1,0 +1,35 @@
+$defaultFontName: 'Josefin Sans';
+$fontStyle: normal;
+
+$defaultFollback: Arial, Helvetica, sans-serif;
+$mainFont: $defaultFontName, $defaultFollback;
+
+$secondaryFontName: 'Aleo';
+$secondaryFollback: Georgia, 'Times New Roman', Times, serif;
+$secondaryFont: $secondaryFontName, $secondaryFollback;
+
+// Colors:
+// Fonts:
+$white: #ffffff;
+$dustyGray:#999999;
+$mercury:#E8E8E8;
+
+// Background:
+$white: #ffffff;
+$dodgerBlue: #5474FD;
+$dodgerBlue_2: #496BFE;
+$mineShaft: #333333;
+$mineShaft_2: #232323;
+
+// Socials:
+$azureRadiance: #1878F3;
+$pictonBlue: #55ACEF;
+$deepCerulean: #007BB6;
+$scarlet: #EA1D00;
+$cardinal: #CB2229;
+
+// BreakPoints:
+$XL: 1200px;
+$LG: 992px;
+$MD: 768px;
+$SM: 576px;

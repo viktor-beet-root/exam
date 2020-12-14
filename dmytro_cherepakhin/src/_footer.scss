@@ -1,0 +1,85 @@
+.footer{
+    background-color: $mineShaft_2;
+    padding: 107px  0 25px;
+
+    &__info{
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: $white;
+
+        &_logo{
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 1.083;
+            text-transform: uppercase;
+            letter-spacing: 2.5px;
+        }
+
+        &_slogan{
+            font-size: 16px;
+            letter-spacing: .5px;
+            padding: 10px;
+        }
+    }
+}
+
+.social{
+    margin-top: 7px;
+    display: flex;
+    justify-content: center;
+}
+
+.social-icon{
+    box-sizing: border-box;
+    display: inline-block;
+    height: 28px;
+    width: 28px;
+    color:$mercury;
+    margin: 5px;
+    padding: 5px;
+
+    &:hover{
+        border-radius: 5px;
+    }
+
+    & svg{
+        height: 100%;
+        width: 100%;
+    }
+
+    &:nth-child(3){
+        color: $dodgerBlue;
+    }
+
+    &:nth-child(1):hover,
+    &:nth-child(1):focus{
+        color: $white;
+        background-color: $azureRadiance;
+    }
+
+    &:nth-child(2):hover,
+    &:nth-child(2):focus{
+        color: $pictonBlue;
+        background-color: $white;
+    }
+
+    &:nth-child(3):hover,
+    &:nth-child(3):focus{
+        color: $white;
+        background-color: $deepCerulean;
+    }
+
+    &:nth-child(4):hover,
+    &:nth-child(4):focus{
+        color: $scarlet;
+        background-color: $white;
+    }
+
+    &:nth-child(5):hover,
+    &:nth-child(5):focus{
+        color: $cardinal;
+        background-color: $white;
+    }
+}
