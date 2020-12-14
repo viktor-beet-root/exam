@@ -206,6 +206,7 @@
     }
 
     .menu__hidden_btn-line{
+        display: block;
         position: relative;
         height: 2px;
         width: 100%;
@@ -246,7 +247,6 @@
         margin-top: 45px;
         flex-direction: column;
         visibility: hidden;
-        pointer-events: none;
         position: absolute;
         left: 0;
         right: 0;
@@ -258,7 +258,6 @@
     .menu__hidden:checked ~.menu__items{
         display: block;
         visibility: visible;
-        pointer-events: all;
         transition: .5s ease-in-out;
         opacity: 1;
         

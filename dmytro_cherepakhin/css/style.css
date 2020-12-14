@@ -1,18 +1,18 @@
 @font-face {
   font-family: "Josefin Sans";
-  font-style: "normal";
+  font-style: normal;
   font-weight: 400;
   src: local(""), url("../fonts/josefin-sans-v16-latin-regular.woff2") format("woff2"), url("../fonts/josefin-sans-v16-latin-regular.woff") format("woff");
 }
 @font-face {
   font-family: "Josefin Sans";
-  font-style: "normal";
+  font-style: normal;
   font-weight: 700;
   src: local(""), url("../fonts/josefin-sans-v16-latin-700.woff2") format("woff2"), url("../fonts/josefin-sans-v16-latin-700.woff") format("woff");
 }
 @font-face {
   font-family: "Aleo";
-  font-style: "normal";
+  font-style: normal;
   font-weight: 400;
   src: local(""), url("../fonts/aleo-regular-webfont.woff2") format("woff2"), url("../fonts/aleo-regular-webfont.woff") format("woff");
 }
@@ -227,6 +227,7 @@
   }
 
   .menu__hidden_btn-line {
+    display: block;
     position: relative;
     height: 2px;
     width: 100%;
@@ -263,7 +264,6 @@
     margin-top: 45px;
     flex-direction: column;
     visibility: hidden;
-    pointer-events: none;
     position: absolute;
     left: 0;
     right: 0;
@@ -275,7 +275,6 @@
   .menu__hidden:checked ~ .menu__items {
     display: block;
     visibility: visible;
-    pointer-events: all;
     transition: 0.5s ease-in-out;
     opacity: 1;
   }
