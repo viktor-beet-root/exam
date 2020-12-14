@@ -9,15 +9,15 @@
     &_head{
         font-family: $secondaryFont;
         font-size: 36px;
-        font-weight: 400;
+        font-weight: 300;
         padding-bottom: 55px;
     }
 
     &_text{
         font-size: 16px;
-        font-weight: 400;
+        font-weight: 300;
         line-height: 1.625;
-        letter-spacing: .5px;
+        letter-spacing: 1px;
         padding-bottom: 26px;
     }
 }
@@ -31,7 +31,7 @@
     width: 225px;
     height: 60px;
     cursor: pointer;
-    background: linear-gradient(45deg,$DodgerBlue_2 40%, $DodgerBlue 40%);
+    background: linear-gradient(45deg,$dodgerBlue_2 40%, $dodgerBlue 40%);
     display: inline-block;
     text-align: center;
     padding: 21px;
@@ -45,7 +45,7 @@
     }
 
     &:hover{
-        background: linear-gradient(45deg,$DodgerBlue_2 60%, $DodgerBlue 60%);
+        background: linear-gradient(45deg,$dodgerBlue_2 60%, $dodgerBlue 60%);
     }
 }
 
@@ -64,14 +64,14 @@
     }
 }
 
-@media (max-width: 992px){
+@media (max-width: $LG){
     .whyChoose-top__photos_1,
     .whyChoose-top__photos_2{
         margin: 0 auto;
     }
 }
 
-@media (max-width: 576px){
+@media (max-width: $SM){
     .whyChoose-top__photos_1 img,
     .whyChoose-top__photos_2 img{
         width: 100%;
@@ -79,7 +79,7 @@
     }
 }
 
-@media (max-width: 768px){
+@media (max-width: $MD){
     .whyChoose-top__info{
         padding: 85px 15px 0 15px;
     }

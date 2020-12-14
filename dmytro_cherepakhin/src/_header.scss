@@ -13,7 +13,7 @@
         text-transform: uppercase;
         letter-spacing: 3px;
         padding-bottom: 5px;
-        @media (max-width: 576px){
+        @media (max-width:$SM){
             font-size: 30px;
         }
     }
@@ -33,7 +33,7 @@
         display: flex;
         margin: 0 auto;
         justify-content: center;
-        @media (max-width: 576px){
+        @media (max-width: $SM){
             flex-direction: column;
             flex-shrink: 1;
         }
@@ -44,19 +44,19 @@
         width: 500px;
         text-align: center;
         border: 1px solid $white;
-        @media (max-width: 576px){
+        @media (max-width: $SM){
             width: 100%;
         }
 
         &::placeholder{
-            color: $DustyGray;
+            color: $dustyGray;
             font-size: 14px;
             letter-spacing: 2px;
         }
     }
 
     &__search_btn{
-        background-color: $DodgerBlue;
+        background-color: $dodgerBlue;
         box-sizing: border-box;
         width: 150px;
         height: 60px;
@@ -70,25 +70,37 @@
         align-items: center;
         justify-content: space-between;
         cursor: pointer;
-        @media (max-width: 576px){
+        @media (max-width: $SM){
             margin-top: 10px;
         }
         
         & span{
             padding-left: 35px;
-            @media (max-width:768px) {
+            @media (max-width:$MD) {
                 padding-left: 15px;
                 padding-right: 15px;
             }
         }
 
-        & img{
-            padding-right: 15px;
+        & svg{
+            margin-right: 15px;
+            fill: $white;
         }
 
         &:hover,
         &:focus{
-            background-color: $DodgerBlue_2;
+            background-color: $dodgerBlue_2;
+
+            & svg{
+                width: 30px;
+                height: 30px;
+                fill:$scarlet;
+            }
+
+            & span{
+                color: $scarlet;
+                font-weight: 600;
+            }
         }
     }
 
@@ -107,12 +119,12 @@
         }
 
         &_arrow{
-        width: 10px;
-        height: 10px;
-        transform: rotate(45deg);
-        border-right: 1px solid $white;
-        border-bottom: 1px solid $white;
-        transition: all .1s ease-in;
+            width: 10px;
+            height: 10px;
+            transform: rotate(45deg);
+            border-right: 1px solid $white;
+            border-bottom: 1px solid $white;
+            transition: all .1s ease-in;
         }
 
         &:hover .header__scroll_arrow,
@@ -126,7 +138,7 @@
 .header__menu{
     padding-top: 12px;
     display: block;
-    background-color: $DodgerBlue;
+    background-color: $dodgerBlue;
     padding-bottom: 15px;
 
     &_row{
@@ -139,6 +151,7 @@
 .menu__name{
     padding-left: 13px;
     font-size: 24px;
+    font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 2px;
 }
@@ -167,7 +180,7 @@
     }
 }
 
-@media (max-width: 992px){
+@media (max-width: $LG){
     .header__menu_row{
         flex-direction: column;
         align-items: flex-end;
@@ -179,13 +192,13 @@
     }
 }
 
-@media (max-width: 768px){
+@media (max-width: $MD){
     .menu__name{
         align-self: center;
     }
 }
 
-@media (max-width: 576px){
+@media (max-width: $SM){
     .menu__name{
         align-self: flex-start;
         padding-bottom: 0;
@@ -250,7 +263,7 @@
         position: absolute;
         left: 0;
         right: 0;
-        background-color: $MineShaft_2;
+        background-color: $mineShaft_2;
         text-align: center;
         opacity: 1;
     }
@@ -264,7 +277,7 @@
     }
 
     .menu__items_item{
-        border-bottom: 1px solid $DodgerBlue;
+        border-bottom: 1px solid $dodgerBlue;
         margin: 0;
         padding: 0;
         cursor: pointer;
@@ -279,7 +292,7 @@
 
     .menu__items_item:hover,
     .menu__items_item:focus{
-        background-color: $DodgerBlue;
+        background-color: $dodgerBlue;
         border-top:2px solid transparent;
         
         & .menu__items_link{
@@ -289,6 +302,6 @@
 
     .menu__items_item:first-child:hover,
     .menu__items_item:first-child:focus{
-        border-top:2px solid $MineShaft_2;
+        border-top:2px solid $mineShaft_2;
     }
 }

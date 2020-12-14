@@ -1,7 +1,7 @@
 $defaultFontName: 'Josefin Sans';
 $fontStyle: normal;
 
-$defaultFollback: 'Arial, Helvetica, sans-serif';
+$defaultFollback: Arial, Helvetica, sans-serif;
 $mainFont: $defaultFontName, $defaultFollback;
 
 $secondaryFontName: 'Aleo';
@@ -11,19 +11,25 @@ $secondaryFont: $secondaryFontName, $secondaryFollback;
 // Colors:
 // Fonts:
 $white: #ffffff;
-$DustyGray:#999999;
-$Mercury:#E8E8E8;
+$dustyGray:#999999;
+$mercury:#E8E8E8;
 
 // Background:
 $white: #ffffff;
-$DodgerBlue: #5474FD;
-$DodgerBlue_2: #496BFE;
-$MineShaft: #333333;
-$MineShaft_2: #232323;
+$dodgerBlue: #5474FD;
+$dodgerBlue_2: #496BFE;
+$mineShaft: #333333;
+$mineShaft_2: #232323;
 
 // Socials:
-$AzureRadiance: #1878F3;
-$PictonBlue: #55ACEF;
-$DeepCerulean: #007BB6;
-$Scarlet: #EA1D00;
-$Cardinal: #CB2229;
+$azureRadiance: #1878F3;
+$pictonBlue: #55ACEF;
+$deepCerulean: #007BB6;
+$scarlet: #EA1D00;
+$cardinal: #CB2229;
+
+// BreakPoints:
+$XL: 1200px;
+$LG: 992px;
+$MD: 768px;
+$SM: 576px;

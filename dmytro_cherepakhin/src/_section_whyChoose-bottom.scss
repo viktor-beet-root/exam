@@ -1,5 +1,5 @@
 .whyChoose-bottom{
-    background-color: $MineShaft;
+    background-color: $mineShaft;
     padding-top: 30px
 }
 
@@ -17,7 +17,7 @@
 
 .whyChoose-bottom__item{
     box-sizing: border-box;
-    background-color: $MineShaft;
+    background-color: $mineShaft;
     padding: 10px;
 }
 
@@ -33,7 +33,7 @@
     font-size: 36px;
 }
 
-@media (max-width: 992px){
+@media (max-width: $LG){
     .whyChoose-bottom__wrapper_text{
         padding-bottom: 30px;
         margin: 0 -20px;
@@ -46,7 +46,7 @@
     }
 }
 
-@media (max-width: 576px){
+@media (max-width: $SM){
     .whyChoose-bottom__wrapper_text{
         padding-bottom: 30px;
         margin: 0 10px;

@@ -1,5 +1,5 @@
 .footer{
-    background-color: $MineShaft_2;
+    background-color: $mineShaft_2;
     padding: 107px  0 25px;
 
     &__info{
@@ -10,7 +10,7 @@
         color: $white;
 
         &_logo{
-            font-weight: 700;
+            font-weight: 600;
             font-size: 24px;
             line-height: 1.083;
             text-transform: uppercase;
@@ -36,8 +36,7 @@
     display: inline-block;
     height: 28px;
     width: 28px;
-    // border: 1px solid red;
-    color:$Mercury;
+    color:$mercury;
     margin: 5px;
     padding: 5px;
 
@@ -51,36 +50,36 @@
     }
 
     &:nth-child(3){
-        color: $DodgerBlue;
+        color: $dodgerBlue;
     }
 
     &:nth-child(1):hover,
     &:nth-child(1):focus{
         color: $white;
-        background-color: $AzureRadiance;
+        background-color: $azureRadiance;
     }
 
     &:nth-child(2):hover,
     &:nth-child(2):focus{
-        color: $PictonBlue;
+        color: $pictonBlue;
         background-color: $white;
     }
 
     &:nth-child(3):hover,
     &:nth-child(3):focus{
         color: $white;
-        background-color: $DeepCerulean;
+        background-color: $deepCerulean;
     }
 
     &:nth-child(4):hover,
     &:nth-child(4):focus{
-        color: $Scarlet;
+        color: $scarlet;
         background-color: $white;
     }
 
     &:nth-child(5):hover,
     &:nth-child(5):focus{
-        color: $Cardinal;
+        color: $cardinal;
         background-color: $white;
     }
 }
