@@ -1,5 +1,6 @@
 .how-it-work{
     display: flex;
+    position: relative;
     padding: 65px 0 91px 0;
 
     @media (max-width: 350px){
@@ -19,25 +20,36 @@
         @include center-horizont;
         align-items: center;
         position: relative;
+    }
 
-        &:first-child, &:nth-child(2){
-            &::before{
-                content: '';
-                display: block;
-                position: absolute;
-                height: 250%;
-                width: 110% ;
-                border-top: 2px dotted $how-it-wo__line-color;
-                border-radius: 100%;
-                opacity: .7;
-                right: 0;
-                top: 0;
-                transform: translate(50% , -9%);
+    &__indikator{
+        overflow: hidden;
+        display: block;
+        position: absolute;
+        height: 20%;
+        width: 43% ;
+        top: 10%;
+        left: 12%;
 
-                @media (max-width: 350px){
-                    display: none;
-                }
-            }
+        &:last-child{
+            left: 45.9%;
+        }
+
+        &::before{
+            content: '';
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0%;
+            width: 100%;
+            height: 800%;
+            border-top: 2px dotted $how-it-wo__line-color;
+            border-radius: 100%;
+            opacity: .7;
+        }
+
+        @media (max-width: 350px){
+            display: none;
         }
     }
 
