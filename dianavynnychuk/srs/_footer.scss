@@ -1,0 +1,45 @@
+.end {
+    background:$nero;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+.container_footer {
+    margin-top: 120px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__menu {
+        list-style: none;
+        display: flex;
+        justify-items: center;
+        align-items: center;
+        align-content: center;
+    }
+
+    &__link {
+        text-decoration: none;
+        color:$white;
+        font-size: 16px;
+        padding:5px;
+
+        &:hover {
+            color: $soft_blue;
+        }
+    }
+
+    &__items {
+        margin-left: 11px;
+        margin-right: 11px;
+    }
+}

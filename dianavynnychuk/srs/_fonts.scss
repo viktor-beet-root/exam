@@ -1,0 +1,5 @@
+@include fontFace($default-fonts-name,'../fonts/josefin-sans-v16-latin-regular');
+
+@include fontFace($default-fonts-name, '../fonts/josefin-sans-v16-latin-700', normal, 700);
+
+@include fontFace ($secondary-fonts-name, '../fonts/aleo-v4-latin-regular');

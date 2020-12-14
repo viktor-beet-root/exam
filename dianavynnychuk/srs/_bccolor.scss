@@ -1,0 +1,63 @@
+.bccolor {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    width: 100%;
+    flex: 0 0 auto;
+    background:$soft_blue;
+}
+
+.navcontainer {
+    padding: 0px 15px 0px 15px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.nav {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+
+    &__toggler {
+        display: none;
+    }
+
+    &__title {
+        font-size: 18px;
+        letter-spacing: 5px;
+        font-style: 700;
+        text-transform: uppercase;
+        color:$white;       
+    }
+
+    &__menu {
+        width: 50%;
+    }
+
+    &__items {
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        align-content: center;
+        align-items: center;
+    }
+
+    &__link {
+        text-decoration: none;
+        color:$white;        
+    }
+    
+    &__item {
+        font-size: 10px;
+        font-style: 400;
+        text-transform: uppercase;
+                        
+        &:hover {
+            font-size: 15px;
+            transition: 0.2s;
+        }
+    }
+}

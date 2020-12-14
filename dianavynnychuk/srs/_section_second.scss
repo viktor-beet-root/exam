@@ -1,0 +1,54 @@
+.section_second {
+    background: $gray;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.art {
+    position: relative;
+    margin-top: 46px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.menucontainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.menu {
+    width: 100%;
+    max-width: 900px;
+    display: flex;
+    list-style: none;
+    position: absolute;
+    justify-content: space-between;
+
+    &__items{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+    }
+
+    &__logo {
+        background:$gray;
+    }
+
+    &__description {
+        font-size: 26px;
+        font-style: 400;
+        color:$white;
+        text-align: center;
+    }
+}
