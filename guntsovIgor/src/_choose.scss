@@ -1,0 +1,65 @@
+.choose {
+    background: url('../img/city.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 200px 0 125px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+
+    &__section {
+        max-width: 530px;
+    }
+
+    &__title {
+        color:$textColor;
+        font-size: 36px;
+        font-family: $secondaryMainFont;
+        margin-bottom: 50px;
+    }
+
+    &__text {
+        color: $blockTextColor;
+        letter-spacing: 1.6px;
+        margin-bottom: 48px;
+    }
+
+    &__link {
+        display: inline-block;
+        text-decoration: none;
+        color:$textColor;
+        padding:23px 0;
+        min-width: 225px;
+        background-color: $navColor;
+        text-align: center;
+        vertical-align: middle;
+        font-family: $secondaryMainFont;
+        text-transform: uppercase;
+        letter-spacing: 1.2px;
+        transition: 0.5s ease-in-out;
+
+        &:hover {
+            background-color: $textColor;
+            color:$navColor;
+            border-radius: 5px;
+        }
+    }
+
+    & .images {
+        position: relative;
+    }
+
+    & .images__item {
+        position: absolute;
+
+        &_right {
+            bottom: 60px;
+            right:-50px;
+        }
+
+        &_left {
+            top:-60px;
+            right:100%;
+        }
+    }
+}

@@ -1,0 +1,42 @@
+.footer {
+    background-color: $footerBgColor;
+    padding: 110px 0 45px;
+    text-align: center;
+
+    &__logo {
+        font-size: 24px;
+        letter-spacing: 3.36px;
+        color:$textColor;
+        text-decoration: none;
+        text-transform: uppercase;
+        margin-bottom: 15px;
+        font-weight: bold;
+    }
+
+    &__text {
+        letter-spacing: 1.6px;
+        color:$textColor;
+        margin-bottom: 25px;
+    }
+
+    &__link {
+        display: inline-block;
+        width: 20px;
+        height:20px;
+        margin-right:20px;
+    }
+}
+
+.social__icon {
+        
+    &:hover {
+
+        & .social__icon_facebook, .social__icon_twitter, .social__icon_in {
+            fill:$navColor;
+        }
+
+        & .social__icon_pinterest, .social__icon_youtube {
+            fill:$footerIconColor;
+        }
+    }
+}

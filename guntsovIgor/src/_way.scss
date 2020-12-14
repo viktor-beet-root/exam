@@ -1,0 +1,36 @@
+.main__way {
+    background-color: $commentsBgColor;
+    padding: 100px 0 115px;
+    position: relative;
+}
+
+.way {
+    display: flex;
+    justify-content: space-evenly;
+
+    &__item {
+        text-align: center;
+
+        &::after {
+            content: '';
+            position: absolute;
+            width:650px;
+            height: 65px;
+            background: url('../img/dotes.png') no-repeat;
+            background-size: cover;
+            top:60px;
+            left:365px;
+        }
+    }
+
+    &__img {
+        width:57px;
+        height:57px;
+    }
+
+    &__text {
+        font-family: $secondaryMainFont;
+        font-size: 36px;
+        color: $blockTextColor;
+    }
+}

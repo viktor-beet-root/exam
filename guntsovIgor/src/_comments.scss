@@ -1,0 +1,38 @@
+.main__comments {
+    background: url('../img/mount1.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 120px 0 200px;
+}
+
+.comments {
+    text-align: center;
+
+    &__title {
+        font-family: 'Aleo';
+        font-size: 36px;
+        color:$textColor;
+        margin-bottom: 90px;
+    }
+
+    &__item {
+        display: flex;
+        text-align: left;
+        background-color: $commentsBgColor;
+    }
+
+    &__block {
+        padding: 50px 55px 50px 60px;
+    }
+
+    &__name {
+        font-size: 20px;
+        text-transform: uppercase;
+        color: #fefefe;
+        margin-bottom: 33px;
+    }
+
+    &__text {
+        color: $blockTextColor;
+    }
+}

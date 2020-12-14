@@ -1,0 +1,29 @@
+.main {
+    font-family: $defaultFont, $fallbackFont;
+    font-size: $defaultFontSize;
+}
+
+.footer {
+    font-family: $defaultFont, $fallbackFont;
+    font-size: $defaultFontSize;
+}
+
+
+@media (max-width: 876px) {
+    .images__item_left {
+        display:none;
+    }
+    
+    .images__item_right {
+        display:none;
+    }
+    
+    .way__item::after {
+        display:none;
+    }
+
+    .navigation__link {
+        padding-right:10px;
+        padding-left: 10px;
+    }
+}
