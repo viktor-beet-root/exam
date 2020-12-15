@@ -1,0 +1,40 @@
+.button {
+    display: block;
+    text-decoration: none;
+    width: 220px;
+    height: 60px;
+    border-color: transparent;
+    background-color: $buttonColor;
+    overflow: hidden;
+    position: relative;
+
+    &:hover .button_bg {
+        transform: translateX(0%);
+    }
+
+    &_center {
+        display: flex;
+        align-items: center;
+        justify-content: center;           
+    }
+
+    &_bg{
+        position: absolute;
+        top: 0;
+        left: 0%;
+        bottom: 20%;
+        right: 20%;
+        transform: translateX(-100%);
+        width: 100%;
+        height: 100%;
+        background: $buttonHover;
+        transition: all .3s ease-out;
+        z-index: 1;
+    }
+    &__text{
+        font-family: $secondaryFont;
+        text-transform: uppercase;
+        color: $defaultTextColor;
+        z-index: 2;
+    }
+}

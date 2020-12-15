@@ -1,0 +1,35 @@
+/* fonts */
+
+$defaultFont: "Josefin";
+$secondaryFont: "Aleo";
+
+$fallback: Arial, Helvetica, sans-serif;
+
+$mainFont: $defaultFont, $fallback;
+$secondaryFont: $secondaryFont, $fallback;
+
+$defaultFontSize: 16px;
+
+/* colors */
+
+$white: #ffffff;
+$dodgerBlue: #5474fd;
+$dodgerBlueApprox: #496bfe;
+$mercury: #e8e8e8;
+$mineShaft: #333333;
+$loftBlockmineShaft: rgba($color: #232323, $alpha: .9);
+$cloud: #BDBCBB;
+ 
+
+
+
+$defaultTextColor: $white;
+$secondaryFontColor: $mercury;
+$buttonColor: $dodgerBlue;
+$buttonHover: $dodgerBlueApprox;
+$footerBg: $dodgerBlue;
+$searchBg: $mineShaft;
+$loftBlock: $loftBlockmineShaft;
+$loftTextColor: $cloud;
+$feedbackColor: $mineShaft;
+$mainFooterBg: $mineShaft;
