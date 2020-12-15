@@ -1,6 +1,6 @@
 .secondary-heading {
     font-size: 36px;
-    font-weight: 400;
+    font-weight: 300;
     font-family: $secondary-fonts;
 
     @media (max-width: $LG ) {
@@ -11,13 +11,14 @@
 .tertiary-heading {
     font-size: 20px;
     text-transform: uppercase;
-    font-weight: 400;
+    font-weight: 300;
 }
 
 .paragraph {
     font-size: $default-font-size;
     line-height: $default-line-height;
     font-family: $default-fonts;
+    font-weight: 300;
 
     @media (max-width: $LG ) {
         font-size: $small-font-size;

@@ -76,14 +76,14 @@ a {
 @font-face {
   font-family: "Josefin Sans";
   font-style: normal;
-  font-weight: 400;
-  src: url("../fonts/josefin-sans-v16-latin-regular.woff2") format("woff2"), url("../fonts/josefin-sans-v16-latin-regular.woff") format("woff");
+  font-weight: 300;
+  src: url("../fonts/josefin-sans-v16-latin-300.woff2") format("woff2"), url("../fonts/josefin-sans-v16-latin-300.woff") format("woff");
 }
 @font-face {
   font-family: "Josefin Sans";
   font-style: normal;
-  font-weight: 700;
-  src: url("../fonts/josefin-sans-v16-latin-700.woff2") format("woff2"), url("../fonts/josefin-sans-v16-latin-700.woff") format("woff");
+  font-weight: 600;
+  src: url("../fonts/josefin-sans-v16-latin-600.woff2") format("woff2"), url("../fonts/josefin-sans-v16-latin-600.woff") format("woff");
 }
 @font-face {
   font-family: "Aleo";
@@ -105,7 +105,7 @@ button, input {
 
 .secondary-heading {
   font-size: 36px;
-  font-weight: 400;
+  font-weight: 300;
   font-family: "Aleo", Arial, Helvetica, sans-serif;
 }
 @media (max-width: 992px) {
@@ -117,13 +117,14 @@ button, input {
 .tertiary-heading {
   font-size: 20px;
   text-transform: uppercase;
-  font-weight: 400;
+  font-weight: 300;
 }
 
 .paragraph {
   font-size: 16px;
   line-height: 1.625;
   font-family: "Josefin Sans", Arial, Helvetica, sans-serif;
+  font-weight: 300;
 }
 @media (max-width: 992px) {
   .paragraph {
@@ -214,14 +215,14 @@ button, input {
 }
 .btn--animated {
   background-image: linear-gradient(135deg, #5474fd 0%, #5474fd 50%, #496bfe 50%);
-  background-size: 250%;
+  background-size: 300%;
   transition: all 0.3s;
 }
 .btn--animated:hover {
   background-position: 100%;
 }
 .btn--animated:active {
-  transform: scale(0.95);
+  transform: scaleY(1.05);
 }
 
 .start-section {
@@ -248,7 +249,7 @@ button, input {
 .start-section__heading {
   text-align: center;
   text-transform: uppercase;
-  font-weight: 700;
+  font-weight: 600;
   font-size: 48px;
 }
 @media (max-width: 576px) {
@@ -285,12 +286,12 @@ button, input {
   transform: rotate(-45deg) translateX(-50%);
 }
 
-.nav__main {
+.nav {
   background-color: #5474fd;
+  position: relative;
 }
 .nav__box {
   height: 80px;
-  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -307,8 +308,7 @@ button, input {
   .nav__menu {
     background-color: #5474fd;
     display: block;
-    width: 100%;
-    height: 45px;
+    width: 0;
     visibility: hidden;
     pointer-events: none;
     opacity: 1;
@@ -316,7 +316,7 @@ button, input {
     top: -180px;
     left: 0;
     text-align: center;
-    transform: translateY(200px);
+    transform: translateX(1000px);
     transition: all 0.3s ease-in-out;
   }
 }
@@ -327,7 +327,7 @@ button, input {
 @media (max-width: 768px) {
   .nav__list {
     display: block;
-    width: 100%;
+    height: 50px;
   }
 }
 .nav__link {
@@ -337,15 +337,15 @@ button, input {
   text-transform: uppercase;
   padding: 0 20px;
   height: 80px;
+  font-size: 16px;
 }
 @media (max-width: 992px) {
   .nav__link {
-    padding: 0 10px;
+    padding: 0 7px;
   }
 }
 @media (max-width: 768px) {
   .nav__link {
-    width: 100%;
     height: 100%;
   }
 }
@@ -363,7 +363,6 @@ button, input {
   position: absolute;
   top: 37px;
   right: 15px;
-  cursor: pointer;
   z-index: 200;
 }
 @media (max-width: 768px) {
@@ -372,9 +371,11 @@ button, input {
   }
 }
 .navigation__icon {
+  display: inline-block;
   position: relative;
   margin-bottom: 15px;
   z-index: 100;
+  cursor: pointer;
 }
 .navigation__icon, .navigation__icon::before, .navigation__icon::after {
   width: 100%;
@@ -416,45 +417,40 @@ button, input {
   .navigation__checkbox:checked ~ .nav__menu {
     visibility: visible;
     pointer-events: all;
-    transform: translateY(0);
+    transform: translateX(0);
     opacity: 1;
+    width: 100%;
   }
 }
 .choose {
-  z-index: 100;
-}
-.choose__text-box {
-  margin-top: 200px;
-}
-@media (max-width: 992px) {
-  .choose__text-box {
-    margin-top: 120px;
-  }
-}
-@media (max-width: 576px) {
-  .choose__text-box {
-    margin-top: 60px;
-  }
-}
-.choose__top {
   background-image: url("../img/choose_bg.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  min-height: 680px;
+  z-index: 100;
+  padding: 120px 0;
+  overflow: hidden;
 }
-.choose__bottom {
-  background-color: #232323;
-}
-.choose__img-box {
-  margin-top: 120px;
+@media (max-width: 768px) {
+  .choose {
+    padding: 60px 0;
+  }
 }
 @media (max-width: 576px) {
-  .choose__img-box {
-    margin-top: 60px;
+  .choose {
+    padding: 30px 0;
+  }
+}
+.choose__text-box {
+  margin-top: 80px;
+}
+@media (max-width: 992px) {
+  .choose__text-box {
+    margin-top: 40px;
   }
 }
 .choose__img-item {
+  display: block;
   max-width: 350px;
 }
 @media (max-width: 992px) {
@@ -465,7 +461,11 @@ button, input {
 .choose__img-item--right {
   float: right;
 }
-.choose__bottom-box {
+
+.works {
+  background-color: #232323;
+}
+.works__box {
   position: relative;
   min-height: 340px;
   display: flex;
@@ -473,17 +473,17 @@ button, input {
   align-items: center;
 }
 @media (max-width: 576px) {
-  .choose__bottom-box {
+  .works__box {
     flex-direction: column;
   }
 }
-.choose__bottom-item {
+.works__item {
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding: 20px;
 }
-.choose__line {
+.works__line {
   position: absolute;
   top: 30px;
   transform: rotate(180deg);
@@ -491,14 +491,14 @@ button, input {
   height: 100px;
 }
 @media (max-width: 576px) {
-  .choose__line {
+  .works__line {
     display: none;
   }
 }
-.choose__line--1 {
+.works__line--1 {
   left: 20%;
 }
-.choose__line--2 {
+.works__line--2 {
   right: 20%;
 }
 
@@ -604,4 +604,3 @@ button, input {
 .social__icon:hover {
   fill: #5474fd;
 }
-/*# sourceMappingURL=style.css.map */

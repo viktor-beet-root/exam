@@ -1,36 +1,27 @@
 .choose {
+    @include bgCover ('../img/choose_bg.jpg');
     z-index: 100;
+    padding: 120px 0;
+    overflow: hidden;
+
+    @media (max-width: $MD ) {
+        padding: 60px 0;
+        }
+
+    @media (max-width: $SM ) {
+        padding: 30px 0;
+        }   
 
     &__text-box {
-        margin-top: 200px;
+        margin-top: 80px;
 
         @media (max-width: $LG ) {
-            margin-top: 120px;
-            }
-
-        @media (max-width: $SM ) {
-            margin-top: 60px;
-            } 
-    }
-
-    &__top {
-        @include bgCover ('../img/choose_bg.jpg');
-        min-height: 680px;
-    }
-
-    &__bottom {
-        background-color: $color-bg;
-    }
-
-    &__img-box {
-        margin-top: 120px;
-
-        @media (max-width: $SM ) {
-            margin-top: 60px;
+            margin-top: 40px;
             }
     }
 
     &__img-item {
+        display: block;
         max-width: 350px;
 
         @media (max-width: $LG ) {
@@ -40,44 +31,5 @@
       &--right {
         float: right;
       }
-    }
-
-    &__bottom-box {
-        position: relative;
-        min-height: 340px;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-
-        @media (max-width: $SM ) {
-           flex-direction: column;
-            }
-    }
-
-    &__bottom-item {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        padding: 20px;
-    }
-
-    &__line {
-        position: absolute;
-        top: 30px;
-        transform: rotate(180deg);
-        width: 25%;
-        height: 100px;
-
-        @media (max-width: $SM ) {
-            display: none;
-            }
-
-        &--1 {
-            left: 20%;
-        }
-
-        &--2 {
-            right: 20%;
-        }
-    }
+   }
 }
