@@ -1,0 +1,51 @@
+.footer {
+    background-color: $bgFooter;
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 115px 15px 48px;
+    }
+
+    &__logo-link {
+        display: inline-block;
+        font-size: 24px;
+        letter-spacing: 3px;
+        color: $textColorWhite;
+        font-weight: 700;
+        text-decoration: none;
+        text-transform: uppercase;
+        line-height: 1.2;
+        margin-bottom: 3px;
+    }
+
+    &__text {
+        font-size: 16px;
+        letter-spacing: 0.5px;
+        margin-bottom: 22px;
+    }
+
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        width: 165px;
+    }
+
+    &__item {
+        &-link {
+            display: block;
+
+            &:hover .footer__svg>path {
+                fill: $fiilSvgFooter;
+                transition: fill .5s ease-in-out;
+            }
+        }
+    }
+
+    &__svg>path {
+        fill: $textColorPage;
+    }
+}

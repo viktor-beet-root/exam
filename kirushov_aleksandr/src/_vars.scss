@@ -1,0 +1,67 @@
+//Polygraphy
+
+$default-fonts-name:"Josefin";
+$follbak: Arial,
+Helvetica,
+sans-serif;
+$default-fonts: $default-fonts-name,
+$follbak;
+$default-font-size: 16px;
+$default-line-height: 1.625;
+
+$secondary-fonts-name: "Aleo";
+$secondary-fonts: $secondary-fonts-name,
+$follbak;
+//Color
+
+$red:#d62c40;
+$grey: #b9bcd1;
+$lightRed: #eb304d;
+
+$dodgerBlue: #3686fe;
+$dodgerBlue02: #5474fd;
+$dodgerBlue03: #496bfe;
+$chathamsBlue: #194177;
+$scorpion: #5a5a5a;
+$white: #fff;
+$whisper: #f9f8fb;
+$black: #000000;
+$mineShaft: #262626;
+$mineShaft02:#333333;
+$mineShaft03Opacity:rgba(35, 35, 35, .9);
+$mineShaft03:#232323;
+$outrageousOrange: #ff6033;
+$bondiBlue: #00afaf;
+$malibu: #70bfff;
+$silverChalice: #9d9d9d;
+$brightSun: #ffe92f;
+$horizon: #5585a2;
+$mercury: #e8e8e8;
+$bondiBlue: #0683b4;
+$capeCod: #373e40;
+$bittersweet: #ff6363;
+$azureRadiance: #00a2ff;
+$spunPearl:#aaa6bd;
+$waxFlower: #ffc3a9;
+$outerSpace: #2b2d2d;
+$eastBay: #37437a;
+
+$textColorPage: $mercury;
+$textColorWhite: $white;
+$colorBorderPage: $white;
+$bgColorHeader: $bondiBlue;
+$bgColorBtnHeader: $dodgerBlue02;
+$bgColorWhyChoose: $capeCod;
+$colorBeforeBtn: $dodgerBlue03;
+$bgColorSearch: $mineShaft02;
+$bgAround01: $dodgerBlue02;
+$bgAround02: $bittersweet;
+$bgAround03: $azureRadiance;
+$bgColorWhatWe: $spunPearl;
+$bgSpainWrapp: $mineShaft03Opacity;
+$bgSpain02Wrapp: $waxFlower;
+$bgColorTourist: $outerSpace;
+$bgFooter: $mineShaft03;
+$fiilSvgFooter: $eastBay;
+
+$defaultBoxShadow: 0 0 2px 1px rgba(0, 0, 0, .35);
