@@ -1,0 +1,86 @@
+.tourist {
+    background-image: url(../images/turistBg.jpg);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: $bgColorTourist;
+
+    &__container {
+        padding: 120px 15px 185px;
+    }
+
+    &__heading {
+        font-family: $secondary-fonts;
+        font-size: 36px;
+        color: $textColorWhite;
+        text-align: center;
+        line-height: 1.1;
+        margin-bottom: 73px;
+    }
+
+    &__picture {
+        padding-right: 0;
+
+        &-img {
+            display: block;
+            width: 100%;
+        }
+    }
+
+    &__content {
+        background-color: $bgColorSearch;
+        padding: 49px 48px 42px 45px;
+        height: 100%;
+
+        &-wrapp {
+            padding-left: 0;
+        }
+
+        &-title {
+            font-size: 20px;
+            text-transform: uppercase;
+            line-height: 1.2;
+            margin-bottom: 39px;
+        }
+
+        &-text {
+            letter-spacing: -1px;
+        }
+
+        &-quotes {
+            width: 30px;
+            height: 25px;
+            float: left;
+            padding: 0 10px 25px 0;
+        }
+    }
+}
+
+@media (max-width:$XL) {
+    .tourist {
+        &__picture {
+            padding-right: 15px;
+
+            &-img {
+                margin: 0 auto;
+                width: auto;
+            }
+        }
+
+        &__content {
+            &-wrapp {
+                padding-left: 15px;
+            }
+        }
+    }
+}
+
+
+@media (max-width:$SM) {
+    .tourist {
+
+        &__picture-img {
+            max-width: 100%;
+        }
+    }
+}

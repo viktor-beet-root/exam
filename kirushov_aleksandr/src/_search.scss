@@ -1,0 +1,114 @@
+.search {
+    background-color: $bgColorSearch;
+
+    &__container {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 81px 0 102px;
+
+        @media (max-width:$SM) {
+
+            & {
+                flex-direction: column;
+            }
+        }
+    }
+
+    &__link {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        text-decoration: none;
+        position: relative;
+        z-index: 20;
+
+        &:hover &-around01 {
+            background-color: $bgAround01;
+            transition: background-color .5s ease-in-out;
+        }
+
+        &:hover &-around02 {
+            background-color: $bgAround02;
+            transition: background-color .5s ease-in-out;
+        }
+
+        &:hover &-around03 {
+            background-color: $bgAround03;
+            transition: background-color .5s ease-in-out;
+        }
+
+        &:hover &-svg>path {
+            fill: $textColorWhite;
+            transition: fill .5s ease-in-out;
+        }
+
+        &-around {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: $bgColorSearch;
+            width: 96px;
+            height: 96px;
+            border-radius: 50%;
+            z-index: 10;
+        }
+
+        &-heading {
+            font-family: $secondary-fonts;
+            font-size: 36px;
+            color: $textColorPage;
+        }
+
+        &-01::after,
+        &-02::after {
+            content: '';
+            position: absolute;
+            top: -22%;
+            left: 50%;
+            width: 185%;
+            height: 165%;
+            border-top: 1px dashed white;
+            border-radius: 50%;
+        }
+
+        @media (max-width:$XL) {
+
+            &-01::after,
+            &-02::after {
+                left: 40%;
+                width: 167%;
+            }
+        }
+
+        @media (max-width:$LG) {
+
+            &-01::after,
+            &-02::after {
+                left: 42%;
+                width: 127%;
+            }
+        }
+
+        @media (max-width:$MD) {
+
+            &-01::after,
+            &-02::after {
+                left: 41%;
+                width: 117%;
+                height: 124%;
+            }
+        }
+
+        @media (max-width:$SM) {
+
+            &-01::after,
+            &-02::after {
+                display: none;
+
+            }
+        }
+    }
+}
