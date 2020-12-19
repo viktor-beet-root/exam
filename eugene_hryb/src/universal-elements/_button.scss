@@ -12,6 +12,8 @@
 
     &__img{
         transition: transform 1s ease-in-out;
+        height: 20px;
+        width: auto;
 
         path{
             transition: fill 1s ease-in-out;
