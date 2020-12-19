@@ -1,105 +1,103 @@
 .menu {
-    background-color: $footerBg;
+	background-color: $footerBg;
+	&__footer {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
 
-    &__footer{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
+	&__list {
+		display: flex;
+		@media screen and (max-width: $MD) {
+			display: none;
+		}
+	}
 
-    &__list{
-        display: flex;    
-        @media screen and (max-width: 800px){
-            display: none;
-            
-        }
-    }
-   
-    &__link,
-    .logo__link {
-        display: block;
-        text-decoration: none;
-        text-transform: uppercase;
-        color: $defaultTextColor;
-        font-size: 14px;
-        padding: 20px;
-        &:hover{
-            height: 20px;
-            background-color: $buttonHover;
-            font-size: 16px;
-        }   
-    }
+	&__link,
+	.logo__link {
+		display: block;
+		text-decoration: none;
+		text-transform: uppercase;
+		color: $defaultTextColor;
+		font-size: 14px;
+		padding: 20px;
+		&:hover {
+			height: 20px;
+			background-color: $buttonHover;
+			font-size: 16px;
+		}
+	}
 
-    .menu__link{
-        font-family: $secondaryFont;
-    }
+	.menu__link {
+		font-family: $secondaryFont;
+	}
 
-    .logo__link {
-        font-size: 24px;
-        &:hover{
-            height: 24px;
-            font-size: 26px;
-        }
-    }
-    &__button {
-        display: none;
-        position: relative;
-        width: 30px;
-        height: 30px;
+	.logo__link {
+		font-size: 24px;
+		&:hover {
+			height: 24px;
+			font-size: 26px;
+		}
+	}
 
-        &_line, &::after, &::before {
-            position: absolute;
-            background-color: $defaultTextColor;
-            content: '';
-            width:25px;
-            height: 3px;
-            left: 5px;
-        }
+	&__button {
+		display: none;
+		position: relative;
+		width: 30px;
+		height: 30px;
 
-        &::before {
-            top: 5px;
-        }
+		&_line,
+		&::after,
+		&::before {
+			position: absolute;
+			background-color: $defaultTextColor;
+			content: "";
+			width: 25px;
+			height: 3px;
+			left: 5px;
+		}
 
-        &::after {
-            top:15px;
-        }
+		&::before {
+			top: 5px;
+		}
 
-        &_line {
-            top:25px;
-            
-        }
-        @media screen and (max-width: 800px) {
-            display: block;
-            right:10px;
+		&::after {
+			top: 15px;
+		}
 
-        }    
-    }
+		&_line {
+			top: 25px;
+		}
+		@media screen and (max-width: $MD) {
+			display: block;
+			right: 10px;
+		}
+	}
 
-    &__input:checked {
-        @media screen and (max-width: 800px){
-            &~.menu__list{
-                display: block;
-            }
-            &~.menu__button::before {
-                transform: rotate(45deg);
-                top:10px;
-                
-            }
-            &~.menu__button::after {
-                transform: rotate(-45deg);
-                top:10px;
-             
-            }         
-        }
-    }
-    &__item{
-        @media screen and (max-width: 800px){
-            border: 3px solid $defaultTextColor;
-        }
-    }
-    &__item:nth-last-child(2),
-    &__item:first-child,
-    &__item:nth-last-child(3){    
-        border-bottom: none;
-    }
+	&__input:checked {
+		@media screen and (max-width: $MD) {
+			& ~ .menu__list {
+				display: block;
+			}
+			& ~ .menu__button::before {
+				transform: rotate(45deg);
+				top: 10px;
+			}
+			& ~ .menu__button::after {
+				transform: rotate(-45deg);
+				top: 10px;
+			}
+		}
+	}
+
+	&__item {
+		@media screen and (max-width: $MD) {
+			border: 3px solid $defaultTextColor;
+		}
+	}
+	&__item:nth-last-child(2),
+	&__item:first-child,
+	&__item:nth-last-child(3) {
+		border-bottom: none;
+	}
 }

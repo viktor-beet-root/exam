@@ -17,11 +17,11 @@ $dodgerBlue: #5474fd;
 $dodgerBlueApprox: #496bfe;
 $mercury: #e8e8e8;
 $mineShaft: #333333;
-$loftBlockmineShaft: rgba($color: #232323, $alpha: .9);
-$cloud: #BDBCBB;
- 
-
-
+$loftBlockmineShaft: rgba(
+	$color: #232323,
+	$alpha: 0.9,
+);
+$cloud: #bdbcbb;
 
 $defaultTextColor: $white;
 $secondaryFontColor: $mercury;
@@ -33,3 +33,17 @@ $loftBlock: $loftBlockmineShaft;
 $loftTextColor: $cloud;
 $feedbackColor: $mineShaft;
 $mainFooterBg: $mineShaft;
+
+/*breakpoints */
+//размер XL
+$XL: 1200px;
+$XL_width: 960px;
+//размер LG
+$LG: 992px;
+$LG_width: 720px;
+//размер MD
+$MD: 768px;
+$MD_width: 540px;
+//размер SM
+$SM: 576px;
+$SM_width: 100%;
