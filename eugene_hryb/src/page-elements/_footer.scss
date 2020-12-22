@@ -16,7 +16,17 @@
 
     &__title{
         font-size: 24px;
+        font-weight: 600;
         text-transform: uppercase;
+        line-height: 1.2;
+        letter-spacing: 2.5px;
+    }
+
+    &__title-description{
+        font-size: 16px;
+        font-weight: 300;
+        letter-spacing: 1px;
+        line-height: 2.2;
     }
 
     &__social-list{
@@ -28,7 +38,7 @@
     &__social-link{
         text-decoration: none;
         color: $footer_color-icon;
-        padding: 0 (25px / 2) ;
+        padding: 0 11.4px ;
         transition: color .5s ease-in-out ;
 
         & > svg{

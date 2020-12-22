@@ -7,15 +7,35 @@
 
     &__text, &__img{
         z-index: 10;
-        padding: 0 5px;
+        padding: 0 7px;
+    }
+
+    &__img{
+        transition: transform 1s ease-in-out;
+        height: 20px;
+        width: auto;
+
+        path{
+            transition: fill 1s ease-in-out;
+        }
+    }
+
+    &:hover &__img{
+        transform: scale(1.1);
+
+        path {
+            fill: $button__img_hover;
+        }
     }
 
     &__text{
         font-size: 14px;
         font-weight: 400;
+        letter-spacing: 0.071428em;
         text-transform: uppercase;
         text-decoration: none;
         color: $button__content_color;
+        font-family: $secondFont;
     }
 
     &::before{
