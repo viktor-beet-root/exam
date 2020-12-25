@@ -1,5 +1,5 @@
 .footer {
-background-color: #232323;
+    background-color: #232323;
 }
 
 .footer__logo {
@@ -13,32 +13,35 @@ background-color: #232323;
 .footer__item {
     color: $footerItem;
     font-size: 16px;
-    font-weight: 400;
+    font-weight: 300;
     line-height: 26px;
     text-align: center;
     letter-spacing: 1.6px;
     padding: 15px 0 15px;
 }
 
-.footer__icons{
+.footer__icons {
     text-align: center;
     padding-bottom: 52px;
+    transition: .3s ease-in-out;
 }
 
 .icon {
     height: 15px;
     width: 15px;
+    fill: white;
 }
 
-.footer__link{
+.footer__link {
     text-decoration: none;
     padding-right: 24px;
 }
 
-.footer__link:last-child{
+.footer__link:last-child {
     padding-right: 0px;
 }
 
-.icon:hover svg{
-    fill:$iconFill;
+.footer__link:hover .icon {
+    fill: $iconFill;
+    width: 30px;
 }

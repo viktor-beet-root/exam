@@ -37,7 +37,7 @@
 .country__text {
     color: $contryItem;
     font-size: 16px;
-    font-weight: 400;
+    font-weight: 300;
     line-height: 26px;
     text-align: left;
     padding-bottom: 48px;
@@ -47,14 +47,16 @@
     margin: 0 0 0 auto;
 }
 
-@media (max-width:767px) and (min-width:576px){
+@media (max-width:767px) and (min-width:576px) {
+
     .country-first,
     .country-second {
         padding: 159px 0 0;
     }
 }
 
-@media (max-width:575px){
+@media (max-width:575px) {
+
     .country-first,
     .country-second {
         padding: 80px 0 0;

@@ -5,37 +5,43 @@
 .menu__nav {
     display: flex;
     justify-content: space-between;
+    position: relative;
 }
 
 .menu__logo {
     padding: 28px 0 32px;
 }
 
-.menu__list{
+.menu__list {
     display: flex;
     padding: 28px;
-    @media (max-width:850px){
-            display: none;
-        }
+    cursor: pointer;
+
+    @media (max-width:860px) {
+        display: none;
+        position: absolute;
+        right: 0;
+        z-index: 1;
+    }
 }
 
-.menu__item{
+.menu__item {
     padding: 0 21px;
 }
 
-.menu__links{
-    color:$textColor;
+.menu__links {
+    color: $textColor;
     font-family: $secondary-fonts;
     font-size: 14px;
     font-weight: 400;
     line-height: 26px;
     text-transform: uppercase;
     text-decoration: none;
-    padding-top:2px;
+    padding-top: 2px;
 }
 
-.menu__links:hover{
-    border-top:1px solid $white;
+.menu__item:hover .menu__links {
+    color: $hoverForButton;
 }
 
 .menu__btn {
@@ -44,47 +50,63 @@
     height: 30px;
     display: none;
     position: relative;
-    @media (max-width:850px) {
-        display: block;
-    }
     cursor: pointer;
-}
 
-.menu__input:checked {
-    &~.menu__list{
+    @media (max-width:860px) {
         display: block;
     }
 }
 
-@media (max-width:850px){
-    .menu__burger,
-    .menu__btn::before, 
-    .menu__btn::after {
-        content: '';
-        background-color:white;
-        position: absolute;
-        width: 100%;
-        height: 2px;
-        left: 0;
-    }
-    .menu__btn::before{
-        top: 0;
-    }
-    .menu__btn::after{
-        bottom: 0;
-    }
-    .menu__burger{
-        top: 13px;
-    }
+.menu__burger,
+.menu__btn::before,
+.menu__btn::after {
+    content: '';
+    background-color: white;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 0;
+    transition: .3s ease-in-out;
+}
+
+.menu__btn::before {
+    top: 0;
+}
+
+.menu__btn::after {
+    bottom: 0;
+}
+
+.menu__burger {
+    top: 13px;
+}
+
+@media (max-width:860px) {
     .menu__input:checked {
-        &~.menu__burger{
-            background-color:transparent;
+        &~.menu__list {
+            display: block;
         }
-        &~.menu__btn::before{
-            transform: skewX(-45deg);
+
+        &+.menu__btn .menu__burger {
+            background-color: transparent;
         }
-        &~.menu__btn::after{
-            transform: skewX(45deg);
+
+        &+.menu__btn::before {
+            top: 13px;
+            transform: rotate(45deg);
         }
+
+        &+.menu__btn::after {
+            top: 13px;
+            transform: rotate(-45deg);
+        }
+    }
+
+    .menu__list {
+        width: 60%;
+        text-align: center;
+        background-color: $menuBg;
+        transform: translateY(-125%);
+        transition: .3s ease-in-out;
     }
 }

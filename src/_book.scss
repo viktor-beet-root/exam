@@ -23,38 +23,31 @@
     z-index: 10;
 }
 
-.book__shape{
-    display: block;
-    position: absolute;
-    z-index: 5;
-    top: 20px;
-    left: 266px;
-}
-
 .book__item {
     padding: 15px 0 119px;
-    color:$bookItem;
+    color: $bookItem;
     font-family: $secondary-fonts;
     font-size: 36px;
     font-weight: 400;
     text-align: center;
+    background-color: $bookBgCl;
 }
 
-@media (max-width:849px) and (min-width:768px){
+@media (max-width:849px) and (min-width:768px) {
     .book__item {
         font-size: 30px;
         padding: 15px 0 100px;
     }
 }
 
-@media (max-width:767px) and (min-width:576px){
+@media (max-width:767px) and (min-width:576px) {
     .book__item {
         font-size: 25px;
         padding: 15px 0 75px;
     }
 }
 
-@media (max-width:575px){
+@media (max-width:575px) {
     .book__item {
         font-size: 20px;
         padding: 15px 0 50px;

@@ -1,9 +1,9 @@
 .page{
     font-family: $default-fonts;
     font-size: $default-font-size;
-    font-weight: 400;
+    font-weight: 300;
     color:$textColor;
-    border: 15px solid white;
+    border: $pageLine solid white;
 }
 
 .container {

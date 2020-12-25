@@ -1,13 +1,17 @@
 //Polygraphy
 
 $default-fonts-name: "Josefin Sans";
-$follbak: Arial, Helvetica, sans-serif;
-$default-fonts: $default-fonts-name, $follbak;
+$follbak: Arial,
+Helvetica,
+sans-serif;
+$default-fonts: $default-fonts-name,
+$follbak;
 $default-font-size: 16px;
 
 
 $secondary-fonts-name: "Aleo";
-$secondary-fonts: $secondary-fonts-name, $follbak;
+$secondary-fonts: $secondary-fonts-name,
+$follbak;
 //Color
 $white:white;
 $darkGray:#999999;
@@ -17,6 +21,7 @@ $darkCharcoal:#333333;
 $whisper:#e8e8e8;
 $nero:#232323;
 $gradColor: rgba($color: #232323, $alpha: 0.9);
+$yellow: yellow;
 
 $textColor:$white;
 $seachInput:$white;
@@ -37,4 +42,5 @@ $reviewBlock:$darkCharcoal;
 $reviewText:$whisper;
 $countryDescr:$gradColor;
 $contryItem:$whisper;
-
+$hoverForButton:$yellow;
+$pageLine:15px;

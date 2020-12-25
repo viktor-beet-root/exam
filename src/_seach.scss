@@ -1,12 +1,18 @@
 .seach {
-    @include bgCover('../images/1-min.jpg');
-    min-height: 740px;
+    flex-grow: 1;
+    position: relative;
+}
+
+.seach__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
 }
 
 .seach__item {
-    padding-top: 280px;
     font-size: 48px;
-    font-weight: 700;
+    font-weight: 600;
     line-height: 26px;
     text-align: center;
     text-transform: uppercase;
@@ -16,7 +22,7 @@
 .seach__text {
     padding-top: 15px;
     font-size: 22px;
-    font-weight: 400;
+    font-weight: 300;
     line-height: 26px;
     text-align: center;
     letter-spacing: 6.82px;
@@ -29,7 +35,7 @@
 
 .seach__inputblock {
     margin: 0 auto;
-    width: 650px;
+    max-width: 650px;
     background-color: $seachInput;
 }
 
@@ -37,7 +43,7 @@
     text-align: left;
     border: none;
     font-size: 14px;
-    font-weight: 400;
+    font-weight: 300;
     line-height: 26px;
     letter-spacing: 2.8px;
     width: 430px;
@@ -95,6 +101,11 @@
     z-index: 5;
 }
 
+.seach__button:hover span {
+    font-family: $secondary-fonts;
+    font-size: 15px;
+}
+
 .seach__icon {
     position: relative;
     color: $textColor;
@@ -103,18 +114,27 @@
     z-index: 5;
 }
 
+.seach__button:hover .seach__icon {
+    color: $hoverForButton;
+}
+
 .down {
+    display: block;
     height: 50px;
     width: 110px;
-    margin: 120px auto 0;
-    position: relative;
+    margin: 0 auto;
+    position: absolute;
     cursor: pointer;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 50px;
 }
 
 .down__link {
+    display: block;
     color: $textColor;
     font-size: 14px;
-    font-weight: 400;
+    font-weight: 300;
     line-height: 26px;
     text-align: center;
     letter-spacing: 2.8px;
@@ -141,48 +161,47 @@
     left: 44px;
 }
 
-.down__link:hover {
+.down:hover .down__link {
     color: $ultramarineBlue;
-    border: 1px solid $ultramarineBlue;
 }
 
 @media (max-width:767px) and (min-width:576px) {
-    .seach {
-        min-height: 500px;
-    }
-
-    .seach__item {
-        padding-top: 200px;
-        font-size: 40px;
-    }
-
     .seach__inputblock {
-        width: 550px;
+        width: 520px;
     }
 
     .seach__input {
         padding-left: 30px;
         width: 360px;
     }
+
+    .seach__button {
+        width: 120px;
+    }
 }
 
 @media (max-width:575px) {
-    .seach {
-        min-height: 400px;
-    }
-
-    .seach__item {
-        padding-top: 150px;
-        font-size: 35px;
-    }
-
     .seach__input {
-        width: 150px;
+        width: 167px;
         padding-left: 0;
         font-size: 12px;
     }
 
     .seach__inputblock {
-        width: 310px;
+        width: 300px;
     }
+
+    .seach__button {
+        width: 120px;
+    }
+
+    .down {
+        display: none;
+    }
+
+
+    .seach__item {
+        font-size: 40px;
+    }
+
 }
