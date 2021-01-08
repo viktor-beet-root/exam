@@ -1,0 +1,156 @@
+.choose {
+    @include bgCover('../images/2.jpg');
+}
+
+.choose__block {
+    display: flex;
+}
+
+.сhoose__left,
+.сhoose__right {
+    box-sizing: border-box;
+    max-width: 570px;
+    padding:0 15px;
+    margin: 0 auto;
+}
+
+
+.choose__item {
+    padding: 204px 0 62px;
+    font-family: $secondary-fonts;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 26px;
+    text-align: left;
+}
+
+.choose__text {
+    max-width: 530px;
+    color: $chooseText;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 26px;
+    text-align: left;
+    padding-bottom: 35px;
+    letter-spacing: 1.6px;
+}
+
+.choose__link {
+    margin-bottom: 132px;
+}
+
+.сhoose__right {
+    padding-top: 120px;
+}
+
+.choose__img {
+    display: block;
+}
+
+.choose__img:first-child {
+    margin-left: 50px;
+    margin-bottom: 5px;
+}
+
+.choose__img:last-child {
+    margin-left: 175px;
+}
+
+@media (max-width:900px) and (min-width:850px){
+    .choose__item {
+        padding: 180px 0 50px;
+        text-align: center;
+        font-size: 30px;
+    }
+    .choose__text {
+        text-align: center;
+    }
+}
+
+@media (max-width:849px) and (min-width:768px){
+    .choose__block {
+        display: block;
+    }
+
+    .choose__item {
+        padding: 100px 0 30px;
+        text-align: center;
+        font-size: 24px;
+    }
+
+    .choose__text {
+        font-size: 14px;
+        text-align: center;
+        padding-bottom: 20px;
+    }
+
+    .сhoose__right {
+        padding: 20px 0;
+    }
+
+    .choose__link {
+        margin: 0 auto;
+    }
+}
+
+@media (max-width:767px) and (min-width:576px){
+    .choose__block {
+        display: block;
+    }
+
+    .choose__item {
+        padding: 50px 0 30px;
+        text-align: center;
+        font-size: 24px;
+    }
+
+    .choose__text {
+        font-size: 14px;
+        text-align: center;
+        padding-bottom: 20px;
+    }
+
+    .сhoose__right {
+        padding: 20px 0;
+    }
+
+    .choose__link {
+        margin: 0 auto;
+    }
+}
+
+@media (max-width:575px){
+    .choose__block {
+        display: block;
+    }
+
+    .choose__item {
+        padding: 50px 0 30px;
+        text-align: center;
+        font-size: 24px;
+    }
+
+    .choose__text {
+        font-size: 14px;
+        text-align: center;
+        padding-bottom: 20px;
+    }
+
+    .сhoose__right {
+        padding: 20px 0;
+    }
+
+    .choose__link {
+        margin: 0 auto;
+    }
+
+    .choose__img:first-child {
+        margin: 0 auto 5px;
+        width: 75%;
+    }
+    
+    .choose__img:last-child {
+        margin: 0 auto;
+        width: 75%;
+    }
+}

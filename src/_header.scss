@@ -1,0 +1,7 @@
+.header{
+    @include bgCover('../images/1-min.jpg');
+    height: calc(100vh - #{$pageLine});
+    display: flex;
+    flex-direction: column;
+    min-height: 530px;
+}

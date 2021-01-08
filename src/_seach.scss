@@ -1,0 +1,207 @@
+.seach {
+    flex-grow: 1;
+    position: relative;
+}
+
+.seach__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+
+.seach__item {
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 26px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 4.8px;
+}
+
+.seach__text {
+    padding-top: 15px;
+    font-size: 22px;
+    font-weight: 300;
+    line-height: 26px;
+    text-align: center;
+    letter-spacing: 6.82px;
+    padding-bottom: 50px;
+}
+
+.seach__form {
+    text-align: center;
+}
+
+.seach__inputblock {
+    margin: 0 auto;
+    max-width: 650px;
+    background-color: $seachInput;
+}
+
+.seach__input {
+    text-align: left;
+    border: none;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 26px;
+    letter-spacing: 2.8px;
+    width: 430px;
+    padding-left: 62px;
+    cursor: pointer;
+}
+
+.seach__input:focus {
+    outline: $seachInput;
+    color: $ultramarineBlue;
+    font-size: 18px;
+}
+
+.seach__input::placeholder {
+    text-align: center;
+}
+
+.seach__button {
+    width: 150px;
+    height: 60px;
+    border: 2px solid $seachBorder;
+    background-color: $seachButtonBg;
+    cursor: pointer;
+    position: relative;
+}
+
+.seach__button::before {
+    content: "";
+    width: 1px;
+    height: 56px;
+    background-color: $ultramarineBlue;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: .3s ease-in-out;
+    z-index: -1;
+}
+
+.seach__button:hover::before {
+    width: 100%;
+    z-index: 3;
+}
+
+.seach__button span {
+    position: relative;
+    color: $textColor;
+    font-family: $secondary-fonts;
+    letter-spacing: 1.4px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 26px;
+    text-align: center;
+    text-transform: uppercase;
+    padding-right: 13px;
+    z-index: 5;
+}
+
+.seach__button:hover span {
+    font-family: $secondary-fonts;
+    font-size: 15px;
+}
+
+.seach__icon {
+    position: relative;
+    color: $textColor;
+    text-align: right;
+    vertical-align: middle;
+    z-index: 5;
+}
+
+.seach__button:hover .seach__icon {
+    color: $hoverForButton;
+}
+
+.down {
+    display: block;
+    height: 50px;
+    width: 110px;
+    margin: 0 auto;
+    position: absolute;
+    cursor: pointer;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 50px;
+}
+
+.down__link {
+    display: block;
+    color: $textColor;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 26px;
+    text-align: center;
+    letter-spacing: 2.8px;
+    text-decoration: none;
+}
+
+.down__link::before {
+    position: absolute;
+    content: '';
+    height: 10px;
+    border: 1px solid $seachBorder;
+    transform: skewX(-45deg);
+    top: 30px;
+    left: 55px;
+}
+
+.down__link::after {
+    position: absolute;
+    content: '';
+    height: 10px;
+    border: 1px solid $seachBorder;
+    transform: skewX(45deg);
+    top: 30px;
+    left: 44px;
+}
+
+.down:hover .down__link {
+    color: $ultramarineBlue;
+}
+
+@media (max-width:767px) and (min-width:576px) {
+    .seach__inputblock {
+        width: 520px;
+    }
+
+    .seach__input {
+        padding-left: 30px;
+        width: 360px;
+    }
+
+    .seach__button {
+        width: 120px;
+    }
+}
+
+@media (max-width:575px) {
+    .seach__input {
+        width: 167px;
+        padding-left: 0;
+        font-size: 12px;
+    }
+
+    .seach__inputblock {
+        width: 300px;
+    }
+
+    .seach__button {
+        width: 120px;
+    }
+
+    .down {
+        display: none;
+    }
+
+
+    .seach__item {
+        font-size: 40px;
+    }
+
+}

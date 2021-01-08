@@ -1,0 +1,14 @@
+.page{
+    font-family: $default-fonts;
+    font-size: $default-font-size;
+    font-weight: 300;
+    color:$textColor;
+    border: $pageLine solid white;
+}
+
+.container {
+    box-sizing: border-box;
+    max-width: 1140px;
+    padding:0 15px;
+    margin: 0 auto;
+}
