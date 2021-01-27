@@ -1,0 +1,27 @@
+.btn {
+    display: inline-block;
+    text-transform: uppercase;
+    padding: 22px 35px;
+    font-size: $default-font-size;
+    font-family: $secondary-fonts-name;
+    margin-top: 50px;
+
+    @media (max-width: $SM ) {
+        padding: 15px 20px;
+        font-size: $small-font-size;
+        }
+
+    &--animated {
+        background-image: linear-gradient(135deg, $color-primary-dark 0%, $color-primary-dark 50%, $color-primary-light 50%);
+        background-size: 300%;
+        transition: all .3s;
+
+        &:hover {
+            background-position: 100%;
+        }
+
+        &:active {
+            transform: scaleY(1.05);
+        }
+    }
+}

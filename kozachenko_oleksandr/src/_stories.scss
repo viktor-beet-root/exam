@@ -1,0 +1,46 @@
+.stories {
+    background-image: url(../img/stories_bg.jpg);
+    height: 730px;
+    padding-top: 120px;
+
+    @media (max-width: $SM ) {
+        padding-top: 60px;
+        }
+
+    &__box {
+        display: flex;
+        margin-top: 90px;
+
+        @media (max-width: $SM ) {
+            margin-top: 60px;
+            flex-direction: column;
+            align-items: center;
+            }
+
+        &_img {
+            max-width: 50%;
+            object-fit: cover;
+
+            @media (max-width: $SM ) {
+                max-width: 100%;
+                }
+        }
+    }
+
+    &__tourist_box {
+        background-color: $color_bg;
+        padding: 40px 50px;
+
+        @media (max-width: $LG ) {
+            padding: 20px 25px;
+            }
+    }
+
+    &__tourist-span {
+        color: $color-primary-dark;
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 26px;
+        padding-right: 5px;
+    }
+}

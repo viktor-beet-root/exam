@@ -1,0 +1,35 @@
+.choose {
+    @include bgCover ('../img/choose_bg.jpg');
+    z-index: 100;
+    padding: 120px 0;
+    overflow: hidden;
+
+    @media (max-width: $MD ) {
+        padding: 60px 0;
+        }
+
+    @media (max-width: $SM ) {
+        padding: 30px 0;
+        }   
+
+    &__text-box {
+        margin-top: 80px;
+
+        @media (max-width: $LG ) {
+            margin-top: 40px;
+            }
+    }
+
+    &__img-item {
+        display: block;
+        max-width: 350px;
+
+        @media (max-width: $LG ) {
+            max-width: 260px;
+            }
+
+      &--right {
+        float: right;
+      }
+   }
+}

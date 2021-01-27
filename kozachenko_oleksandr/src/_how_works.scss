@@ -1,0 +1,44 @@
+.works {
+    background-color: $color-bg;
+
+    &__box {
+        position: relative;
+        min-height: 340px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        @media (max-width: $SM ) {
+            flex-direction: column;
+            }
+        }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 20px;
+    }
+    
+    &__line {
+        position: absolute;
+        top: 30px;
+        transform: rotate(180deg);
+        width: 25%;
+        height: 100px;
+    
+        @media (max-width: $SM ) {
+            display: none;
+            }
+    
+        &--1 {
+            left: 20%;
+        }
+
+        &--2 {
+            right: 20%;
+        }
+    }
+}
+
+
