@@ -1,0 +1,42 @@
+.our-advantages {
+    background-image: url("../images/Rectangle7.jpg");
+    @include bgCover;
+    min-height: 815px;
+    position: relative;
+}
+
+.secondary-zagalovok {
+    font-family: $secondFont;
+    font-size: 36px;
+}
+
+.flex-container {
+    position: absolute;
+    top: 204px;
+}
+
+.paragpraph-medium-width {
+    margin-top: 63px;
+}
+
+.paragpraph-long-width {
+    margin-top: 40px;
+}
+
+.a-button_position {
+    position: absolute;
+    top: 545px;
+}
+
+.img-block {
+    position: absolute;
+    left: 964px;
+    top: 120px;
+    width: 475px;
+}
+
+.second-image {
+    position: absolute;
+    left: 125px;
+    top: 225px;
+}

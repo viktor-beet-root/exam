@@ -1,0 +1,64 @@
+.same-middle-blocks {
+    min-height: 700px;
+    display: block;
+}
+
+.background-hotel {
+    background-image: url('../images/Rectangle414.jpg');
+    @include bgCover;
+}
+
+.bakcground-mountain {
+    background-image: url('../images/Rectangle4141.jpg');
+    @include bgCover;
+}
+
+.country-info_first-block,
+.country-info_second-block {
+    background-color: $black;
+    width: 540px;
+    opacity: .9;
+    min-height: 371px;
+    box-sizing: border-box;
+}
+
+.country-name,
+.place-name {
+    font-size: 20px;
+}
+
+.place-name {
+    font-weight: 500;
+}
+
+.country-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+    top: 229px;
+    padding: 50px 30px;
+}
+
+.trip-info {
+    font-size: 16px;
+}
+
+.same-middle-blocks {
+    position: relative;
+}
+
+.country-info_first-block {
+    position: absolute;
+    left: 330px;
+}
+
+.country-info_second-block {
+    position: absolute;
+    right: 330px;
+}
+
+.a-button_more-padding {
+    padding: 24px 62px;
+}
+

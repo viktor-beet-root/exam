@@ -1,0 +1,54 @@
+.footer{
+    padding-top: 103px;
+
+    @media (max-width: $MD) {
+        padding-top: 50px
+    }
+
+    &__bg{
+        background-color: $footer__color-bg ;
+    }
+
+    &__title, &__title-description{
+        display: block;
+        text-align: center;
+    }
+
+    &__title{
+        font-size: 24px;
+        font-weight: 600;
+        text-transform: uppercase;
+        line-height: 1.2;
+        letter-spacing: 2.5px;
+    }
+
+    &__title-description{
+        font-size: 16px;
+        font-weight: 300;
+        letter-spacing: 1px;
+        line-height: 2.2;
+    }
+
+    &__social-list{
+        display: flex;
+        justify-content: center;
+        padding: 20px 0;
+    }
+
+    &__social-link{
+        text-decoration: none;
+        color: $footer_color-icon;
+        padding: 0 11.4px ;
+        transition: color .5s ease-in-out ;
+
+        & > svg{
+            height: 17px;
+            width: auto;
+            fill: $footer_color-icon ;
+        }
+
+        &:hover{
+            color: $footer__color-hover;
+        }
+    }
+}

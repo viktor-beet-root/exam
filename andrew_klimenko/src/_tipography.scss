@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.page {
+    font-family: $defaultFont;
+    font-size: $default-font-size;
+    font-weight: $default-font-weight;
+    line-height: $default-line-height;
+    border: 15px solid white;
+    color: white;
+}
+
+.container {
+    width: 1140px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.paragraph {
+    font-family: $defaultFont;
+}
+
+.paragpraph-medium-width {
+    width: 506px;
+}
+.paragpraph-long-width {
+    width: 512px;
+    margin-top: 37px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    color: white;
+}
+
+a:active {
+    color: white;
+}
+
+
+
+.a-button {
+    text-transform: uppercase;
+    font-family: $secondFont;
+    display: block;
+    width: 225px;
+    padding: 60px;
+    background-color: $blue;
+    box-sizing: border-box;
+    padding: 24px 38px;
+    text-align: center;
+    position: relative;
+    z-index: 3;
+    overflow: hidden;
+}
+
+
+
+
+.a-button::before {
+    display: block;
+    content: '';
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    background-color: $blue-hover;
+    top: 100%;
+    left: 0%;
+    transition: .5 ease-in-out;
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+
+
+
+
+.button-text {
+    position: relative;
+}
+
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+ul {
+    list-style: none;
+}
+
+.same-middle-blocks {
+    min-height: 700px;
+}
+.same-middle-blockss {
+    min-height: 700px;
+}
+/*1140px - первый breakpoint*/
