@@ -86,26 +86,27 @@
 			font-weight: 200;
 			letter-spacing: 2px;
 		}
-
-		&__line {
+		&::before {
 			position: absolute;
+			content: "";
 			width: 2px;
 			height: 12px;
-			background-color: $defaultTextColor;
+			background-color: #ffffff;
 			top: 15%;
-			left: 47%;
+			right: 50%;
 			transform: rotate(-45deg);
 		}
 
 		&::after {
 			position: absolute;
 			content: "";
-			width: 2px;
-			height: 12px;
-			background-color: $defaultTextColor;
-			top: 15%;
-			right: 46%;
-			transform: rotate(45deg);
+			left: 45%;
+			bottom: -10px;
+			transform: translateX(-50%);
+			width: 15px;
+			height: 15px;
+			border-bottom: 1px solid white;
+			border-left: 1px solid white;
 		}
 	}
 }
