@@ -1,51 +1,51 @@
 .footer {
-	background-color: $mainFooterBg;
-	margin: 0 15px 15px 15px;
-	&__wrapper {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		justify-content: center;
-	}
+    background-color: $mainFooterBg;
+    margin: 0 15px 15px 15px;
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
 
-	&__logo {
-		padding-top: 120px;
-		text-align: center;
-	}
+    &__logo {
+        padding-top: 120px;
+        text-align: center;
+    }
 
-	&__link {
-		display: block;
-		box-sizing: border-box;
-		text-transform: uppercase;
-		text-decoration: none;
-		color: $defaultTextColor;
-		letter-spacing: 1px;
-		font-weight: 700;
-		font-size: 24px;
-		&:hover {
-			padding: 20px;
-			background-color: $buttonHover;
-		}
-	}
-	&__text {
-		padding-top: 20px;
-		color: $secondaryFontColor;
-	}
+    &__link {
+        display: block;
+        box-sizing: border-box;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: $defaultTextColor;
+        letter-spacing: 1px;
+        font-weight: 700;
+        font-size: 24px;
+        &:hover {
+            padding: 20px;
+            background-color: $buttonHover;
+        }
+    }
+    &__text {
+        padding-top: 20px;
+        color: $secondaryFontColor;
+    }
 
-	&__media {
-		display: flex;
-		padding-top: 33px;
-		padding-bottom: 54px;
-	}
+    &__media {
+        display: flex;
+        padding-top: 33px;
+        padding-bottom: 54px;
+    }
 }
 .social-btn__image {
-	padding-right: 20px;
+    padding-right: 20px;
 }
 .social-btn__image:last-of-type {
-	padding-right: 0;
+    padding-right: 0;
 }
 
 .social-btn__img {
-	width: 17px;
-	height: 18px;
+    width: 17px;
+    height: 18px;
 }
