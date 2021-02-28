@@ -1,0 +1,109 @@
+.menu {
+    background-color: $menuBackground;
+    padding: 12px 0;
+
+    @media screen and (max-width: $breack-points-md) {
+        position: relative;
+    }
+
+    &__logo-wrap {
+    }
+    &__container {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__list {
+        display: flex;
+
+        @media screen and (max-width: $breack-points-md) {
+            display: block;
+            visibility: hidden;
+            pointer-events: none;
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 100%;
+            background-color: $white;
+            transform: translateX(100%);
+            transition: all 0.5s ease-in-out;
+        }
+    }
+
+    &__item {
+        &:not(:last-child) {
+            margin-right: 40px;
+
+            @media screen and (max-width: $breack-points-md) {
+                border-bottom: 1px solid $mineShaft;
+                margin: 0;
+            }
+        }
+
+        @media screen and (max-width: $breack-points-md) {
+            text-align: center;
+            padding: 5px 0;
+        }
+    }
+
+    &__link {
+        font-family: $secondaryFonts;
+        font-size: 14px;
+        color: $logoColor;
+        text-transform: uppercase;
+        text-decoration: none;
+        margin-top: 7px;
+        display: block;
+
+        &:hover {
+            color: $hoverEffectColor;
+        }
+
+        @media screen and (max-width: $breack-points-md) {
+            color: $mineShaft;
+        }
+    }
+}
+.menu-input {
+    @include hidden;
+
+    &:checked {
+        & ~ .menu-burger-btn::before {
+            transform: translateY(10px) rotate(135deg);
+        }
+
+        & ~ .menu-burger-btn::after {
+            transform: translateY(-10px) rotate(-135deg);
+        }
+
+        & ~ .menu-burger-btn span {
+            transform: scale(0);
+        }
+
+        & ~ .menu__list {
+            visibility: visible;
+            pointer-events: all;
+            transform: translateX(0);
+        }
+    }
+}
+
+.menu-burger-btn {
+    display: none;
+    width: 30px;
+
+    &::before,
+    &::after,
+    span {
+        background: $white;
+        content: "";
+        display: block;
+        height: 3px;
+        border-radius: 3px;
+        margin: 7px 0;
+        transition: 0.5s;
+    }
+
+    @media screen and (max-width: $breack-points-md) {
+        display: block;
+    }
+}

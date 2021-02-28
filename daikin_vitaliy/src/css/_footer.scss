@@ -1,0 +1,24 @@
+.footer {
+    &__wrapper {
+        padding: 90px 0 30px 0;
+    }
+}
+.social {
+    display: flex;
+    max-width: 170px;
+    justify-content: space-between;
+    margin: 0 auto;
+    &__wrapper {
+    }
+
+    &__link {
+    }
+
+    &__svg {
+        width: 16px;
+        color: $logoColor;
+        &:hover {
+            color: $indigoCraiola;
+        }
+    }
+}

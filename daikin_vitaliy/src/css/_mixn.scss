@@ -1,0 +1,16 @@
+@mixin fontFace($fontFamily, $src, $fontWeight: normal, $fontStyle: normal) {
+    @font-face {
+        font-family: $fontFamily;
+        font-style: $fontStyle;
+        font-weight: $fontWeight;
+        src: url("#{$src}.woff2") format("woff2"),
+            url("#{$src}.woff") format("woff");
+    }
+}
+@mixin hidden {
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    clip: rect(0 0 0 0);
+}

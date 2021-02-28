@@ -1,0 +1,76 @@
+.header {
+    &__blok {
+        background-image: url(../image/02.png);
+        background-repeat: no-repeat;
+        height: 740px;
+        background-size: cover;
+        background-color: $doveGray;
+        padding-top: 250px;
+    }
+
+    &__blok {
+    }
+
+    &__title {
+        &_wrapper {
+        }
+    }
+
+    &__safe {
+        margin: -5px 0 40px;
+    }
+
+    &__search {
+    }
+
+    &__menu {
+    }
+    &__scroll {
+        margin-top: 70px;
+        text-align: center;
+    }
+}
+
+.search {
+    &__wrapper {
+        max-width: 650px;
+        margin: 0 auto;
+        display: flex;
+        border: 2px solid $white;
+        box-sizing: border-box;
+    }
+
+    &__input {
+        width: calc(100% -150px);
+        flex-grow: 1;
+        border: none;
+    }
+
+    &__button {
+    }
+}
+
+$scrollBorder: 1px solid $white;
+.scroll {
+    &__item {
+        text-decoration: none;
+        display: inline-block;
+        &::after {
+            width: 12px;
+            height: 12px;
+            border-left: $scrollBorder;
+            border-bottom: $scrollBorder;
+            content: "";
+            display: block;
+            transform: rotate(-45deg);
+            margin: 0 auto;
+        }
+    }
+
+    &__text {
+        color: $white;
+    }
+
+    &__img {
+    }
+}

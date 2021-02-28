@@ -1,0 +1,33 @@
+.question-blok {
+    background-image: url(../image/05.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: $doveGray;
+    padding: 120px 0;
+    &__title {
+        padding-bottom: 60px;
+        padding-top: 80px;
+    }
+
+    &__buttom {
+        padding-top: 40px;
+    }
+
+    &__img-wrapper {
+        @media screen and (max-width: $breack-points-md) {
+            margin-top: 30px;
+        }
+    }
+
+    &__img {
+        padding-bottom: 5px;
+        display: block;
+
+        &_left {
+            margin-left: 125px;
+        }
+    }
+}
+.text_up {
+    padding-bottom: 40px;
+}

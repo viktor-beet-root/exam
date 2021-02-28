@@ -1,0 +1,104 @@
+@include fontFace($defaultFont, $defaultPath);
+@include fontFace($defaultFont, $defaultPathBold, 700);
+@include fontFace($secondaryFont, $secondaryPath);
+
+.page {
+    font-family: $defaultFonts;
+    font-size: $defaultFontSize;
+    font-weight: $defaultFontWeight;
+    line-height: $defaultLineHeight;
+    border: 15px solid $white;
+    color: $defaultFontColor;
+    background-color: $bodyColor;
+}
+.text-center {
+    text-align: center;
+}
+.container {
+    @media screen and (min-width: $breack-points-md) {
+        max-width: 1140px;
+    }
+}
+.input {
+    height: $heightElemForms;
+    border: none;
+    padding: 0 20px;
+    letter-spacing: 3px;
+
+    &::-webkit-input-placeholder {
+        text-align: center;
+    }
+
+    &:-moz-placeholder {
+        text-align: center;
+    }
+
+    &::-moz-placeholder {
+        text-align: center;
+    }
+
+    &:-ms-input-placeholder {
+        text-align: center;
+    }
+}
+.button {
+    height: $heightElemForms;
+    border: none;
+    width: 150px;
+    background-color: $buttonBgColors;
+    color: $buttonTextColors;
+    font-size: 14px;
+    position: relative;
+    padding-right: 45px;
+    text-align: right;
+    font-family: $secondaryFonts;
+    cursor: pointer;
+
+    &__text {
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+
+    &__img {
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 15px;
+    }
+}
+.subtitle {
+    font-size: 22px;
+    letter-spacing: 4px;
+}
+
+.logo__link {
+    font-size: 24px;
+    color: $logoColor;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: block;
+    letter-spacing: 0.15em;
+}
+
+.logo__subtitle {
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 400;
+    letter-spacing: 0.05em;
+    padding-bottom: 25px;
+}
+
+.logo__link:hover {
+    color: $hoverEffectColor;
+}
+.text {
+    font-family: $defaultFonts;
+    line-height: 26px;
+}
+.smol-title {
+    font-size: 20px;
+    text-transform: uppercase;
+    line-height: 1.3;
+}

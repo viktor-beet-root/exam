@@ -1,0 +1,39 @@
+$defaultFont: "Josefin Sans";
+$secondaryFont: "Aleo";
+
+$defaultPath: "../fonts/josefin-sans-v16-latin-regular";
+$defaultPathBold: "../fonts/josefin-sans-v16-latin-700";
+$secondaryPath: "../fonts/aleo-v4-latin-regular";
+
+$follBak: Arial, Helvetica, sans-serif;
+$defaultFonts: $defaultFont, $follBak;
+$secondaryFonts: $secondaryFont, $follBak;
+
+$defaultFontSize: 16px;
+$defaultFontWeight: 300;
+$defaultLineHeight: 1.625;
+
+$white: white;
+$doveGray: rgb(116, 113, 113);
+$indigoCraiola: #5474fd;
+$indigoCraiolaHover: #1c44f8;
+$mineShaft: #333333;
+$masala: rgba(49, 43, 39, 0.9);
+$hoverBeruza: #54dbfd;
+
+$defaultFontColor: $white;
+$colorTitle: $white;
+$bodyColor: $mineShaft;
+
+$heightElemForms: 60px;
+$widthElemForms: 225px;
+
+$buttonBgColors: $indigoCraiola;
+$buttonTextColors: $white;
+
+$menuBackground: $indigoCraiola;
+$logoColor: $white;
+$hoverEffectBg: $indigoCraiolaHover;
+$hoverEffectColor: $hoverBeruza;
+
+$breack-points-md: 992px;
