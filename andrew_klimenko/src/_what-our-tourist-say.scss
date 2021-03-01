@@ -1,0 +1,44 @@
+.what-our-tourist-say {
+    background-image: url("../images/Rectangle4142.jpg");
+    @include bgCover;
+    min-height: 731px;
+    position: relative;
+}
+
+.second-zagolovok {
+    font-family: $secondFont;
+    font-size: 36px;
+    position: absolute;
+    top: 121px;
+}
+
+.block-wrapper {
+    min-height: 284px;
+    width: 1100px;
+    background-color: $black;
+    position: absolute;
+    top: 247px;
+    display: flex;
+    box-sizing: border-box;
+}
+
+.container-flex-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.image-wrapper {
+    min-height: 284px;
+    width: 445px;
+}
+
+.user-blockquote-wrapper {
+    min-height: 284px;
+    width: 665px;
+}
+
+.block-img {
+    display: block;
+}

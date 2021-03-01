@@ -1,0 +1,45 @@
+.blog{
+    min-height: 670px;
+    padding: 70px 0;
+
+    &__img1{
+        @include bgCover('../images/spain-kottage.jpg');
+    }
+
+    &__img2{
+        @include bgCover('../images/spain-rocks.jpg');
+    }
+
+    &__article-wrap{
+        display: flex;
+
+        @media (max-width: $MD){
+            margin: 0;
+        }
+    }
+
+    &__article{
+        background-color: rgba($color: $blog__article-bg-color, $alpha: .9);
+        padding: 50px 30px;
+        color: $blog__text-color;
+        align-self: flex-end;
+    }
+
+    &__country, &__title{
+        margin: 10px 0;
+    }
+
+    &__country{
+        font-size: 20px;
+    }
+
+    &__title{
+        font-size: 20px;
+        text-transform: uppercase;
+    }
+
+    &__paragraph{
+        margin-bottom: 50px;
+        font-size: 16px;
+    }
+}
