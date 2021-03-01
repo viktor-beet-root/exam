@@ -1,0 +1,70 @@
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url(../images/Image.png);
+    background-size: cover;
+    background-position: top left;
+    
+    &__searchfeald {
+        display:flex;
+        width: 100%;
+        max-width: 650px;
+        margin-top: 48px;
+        border:none;
+        background:$white;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__input {
+        width: 100%;
+        height: 45px;
+        text-align: center;
+        border: none;
+
+        &::placeholder{
+            font-size: 10px;
+            letter-spacing: 4px;
+            font-style: 300;
+        }
+    }
+
+    &__button {
+        width: 145px;
+        height: 45px;
+        display: flex;
+        justify-content: space-around;
+        align-content: center;
+        align-items: center;
+        background-color:$soft_blue;
+        border: none;
+    }
+
+    &__search {
+        font-size: 10px;
+        font-style: 400;
+        text-transform: uppercase;
+        color:$white;
+        
+    }
+
+    &__scroll {
+        margin-top: 118px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+    }
+
+    &__scrolltxt {
+        font-size: 10px;
+        letter-spacing: 4px;
+        font-style: 300;
+        color:$white;
+    }
+    }

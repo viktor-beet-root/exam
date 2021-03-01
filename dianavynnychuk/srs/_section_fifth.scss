@@ -1,0 +1,71 @@
+.section_fifth {
+    min-height: 700px;
+    background-image: url(../images/Rectangle_4142.png);
+    background-size: cover;
+    background-position: bottom left;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+.contain {
+    padding: 30px 15px 15px 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.testimonial {
+    width: 100%;
+    min-height: 284px;
+
+    &__img {
+        height: 100%;
+    }
+
+    &__content {
+        display: flex;
+    }
+
+    &__description {
+        padding: 50px 55px 50px 60px;
+        background:$gray;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+    }
+
+    &__name {
+        font-style: 300;
+        font-size: 20px;
+        color:$white;
+    }
+
+    &__text {
+        width: 100%;
+        font-size: 16px;
+        line-height: 1.5;
+        font-style: 100;
+        color:$white;
+
+        &::first-letter {
+            padding-left: 30px;
+        }
+    }
+    &__quote {
+        font-size: 22px;
+        color:$soft_blue;
+    }     
+
+}
+
+.contain_title {
+    margin-bottom: 100px;
+    font-size: 26px;
+    font-style: 400;
+    color:$white;
+}
