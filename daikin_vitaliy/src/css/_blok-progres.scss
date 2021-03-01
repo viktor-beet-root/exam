@@ -1,0 +1,19 @@
+.blok-progres {
+    padding: 71px 0;
+    &__item {
+    }
+
+    &__img {
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 35px;
+    }
+
+    &__title {
+        font-size: 36px;
+        font-family: $secondaryFonts;
+        color: $buttonTextColors;
+        line-height: 1;
+        text-align: center;
+    }
+}

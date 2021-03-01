@@ -1,0 +1,22 @@
+.title {
+    font-family: $defaultFonts;
+    color: $colorTitle;
+    font-weight: 400;
+    text-transform: uppercase;
+    line-height: 1;
+
+    &_big {
+        font-weight: bold;
+        font-size: 48px;
+    }
+
+    &_h2 {
+        font-family: $secondaryFonts;
+        font-size: 36px;
+        text-transform: none;
+    }
+
+    &_h3 {
+        font-size: 20px;
+    }
+}

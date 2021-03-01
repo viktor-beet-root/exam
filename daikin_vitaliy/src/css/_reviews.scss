@@ -1,0 +1,41 @@
+.reviews {
+    background-image: url(../image/012.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: $doveGray;
+    padding: 120px 0 200px;
+    &__title {
+        padding-bottom: 100px;
+    }
+
+    &__item {
+        display: flex;
+    }
+
+    &__img-wrapper {
+    }
+
+    &__img {
+    }
+
+    &__meseg-wrapper {
+        padding: 48px 58px;
+    }
+
+    &__item-title {
+        padding-bottom: 30px;
+    }
+
+    &__quote {
+        position: relative;
+        &::before {
+            content: "";
+            width: 20px;
+            height: 20px;
+            display: inline-block;
+            background-image: url(../image/quote-left.svg);
+            vertical-align: 15px;
+            margin-right: 5px;
+        }
+    }
+}
